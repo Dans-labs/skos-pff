@@ -2,15 +2,21 @@
 
 DANS maintains a list of preferred file formats (PFF) in https://dans.knaw.nl/nl/bestandsformaten/
 
-This repository attempts to encode the information contained in PFF in a SKOS taxonomy
+This repository attempts to encode the information contained in PFF in a SKOS taxonomy.
+
+Similar effort was made in DARIAH project. See https://github.com/ekoi/DANS-File-Formats/blob/additional-formats/dans-file-formats.json
+
 
 ## Data source
 [Hierarchy-Preferred-Formats.csv](Hierarchy-Preferred-Formats.csv) is based on the list of PFFs maintained by DANS in Google doc [R.0.2 Curated Support Documentation](https://docs.google.com/spreadsheets/d/1hJtnGgO0FWQj4fMjhSIqtmW2lBt1_lI4fMlkgugHMXQ/edit?usp=sharing) 
 
 changes:
-* `isPreferred`(bool) column was added 
+* `isPreferred` column was added, with values: `PreferredFileFormats` and `nonPreferredFileFormats`
 * rows addressing more than one format were split into several rows
-
+* renamed: 
+    * "Document Hierarchy" -> "Collection"
+    * "Fileformat" -> "Concept"
+    * 
 
 ## SKOS taxonomy structure
 

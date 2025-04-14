@@ -1,111 +1,111 @@
-Document Hierarchy,,isPreferred,Stable URL English,Stable Nederlands URL,,
-Text documents,PDF/A (.pdf),TRUE,https://dans.knaw.nl/en/file-formats/text-documents/pdf-a/,https://dans.knaw.nl/bestandsformaten/tekstdocumenten/pdf-a/,,
-Text documents,ODT (.odt),TRUE,https://dans.knaw.nl/en/file-formats/text-documents/opendocument-text/,https://dans.knaw.nl/bestandsformaten/tekstdocumenten/opendocument-text-odt/,,
-Text documents,Microsoft Word (.doc),,https://dans.knaw.nl/en/file-formats/text-documents/microsoft-word-and-office-open-xml/,https://dans.knaw.nl/bestandsformaten/tekstdocumenten/microsoft-word-doc-en-office-open-xml-docx/,https://dans.knaw.nl/bestandsformaten/tekstdocumenten/microsoft-word-doc-en-office-open-xml-docx/,
-Text documents,Office Open XML (.docx),,https://dans.knaw.nl/en/file-formats/text-documents/microsoft-word-and-office-open-xml/,https://dans.knaw.nl/bestandsformaten/tekstdocumenten/microsoft-word-doc-en-office-open-xml-docx/,,
-Text documents,Rich Text File (.rtf),,https://dans.knaw.nl/en/file-formats/text-documents/rich-text-file-rtf/,https://dans.knaw.nl/bestandsformaten/tekstdocumenten/rich-text-file-rtf/,,
-Text documents,PDF other than PDF/A (.pdf),,https://dans.knaw.nl/en/file-formats/text-documents/pdf-pdf/,https://dans.knaw.nl/bestandsformaten/tekstdocumenten/pdf-pdf/,,
-Plain text,Unicode text (.txt),TRUE,https://dans.knaw.nl/en/file-formats/plain-text/unicode/,https://dans.knaw.nl/bestandsformaten/platte-tekst/unicode/,,
-Plain text,Non-Unicode text (.txt),,https://dans.knaw.nl/en/file-formats/plain-text/non-unicode/,https://dans.knaw.nl/bestandsformaten/platte-tekst/non-unicode/,,
-Markup language,XML (.xml),TRUE,https://dans.knaw.nl/en/file-formats/markup-language/xml/,https://dans.knaw.nl/bestandsformaten/opmaaktaal/xml/,,
-Markup language,HTML (.html),TRUE,https://dans.knaw.nl/en/file-formats/markup-language/html/,https://dans.knaw.nl/bestandsformaten/opmaaktaal/html/,,
-Markup language,.css,TRUE,https://dans.knaw.nl/en/file-formats/markup-language/css/,https://dans.knaw.nl/bestandsformaten/opmaaktaal/css/,,
-Markup language,.xslt,TRUE,https://dans.knaw.nl/en/file-formats/markup-language/xslt/,https://dans.knaw.nl/bestandsformaten/opmaaktaal/xslt/,,
-Markup language,.js,TRUE,https://dans.knaw.nl/bestandsformaten/opmaaktaal/script/,https://dans.knaw.nl/en/file-formats/markup-language/script/,https://dans.knaw.nl/bestandsformaten/opmaaktaal/script/,
-Markup language,.es,TRUE,https://dans.knaw.nl/bestandsformaten/opmaaktaal/script/,https://dans.knaw.nl/en/file-formats/markup-language/script/,,
-Markup language,SGML (.sgml),,https://dans.knaw.nl/en/file-formats/markup-language/sgml/,https://dans.knaw.nl/bestandsformaten/opmaaktaal/sgml/,,
-Markup language,Markdown (.md),TRUE,https://dans.knaw.nl/en/file-formats/markup-language/markdown/,https://dans.knaw.nl/bestandsformaten/opmaaktaal/markdown/,,
-Programming Languages,MATLAB,TRUE,https://dans.knaw.nl/en/file-formats/programming-languages/matlab/,https://dans.knaw.nl/bestandsformaten/programmeertaal/matlab/,,
-Programming Languages,NetCDF,TRUE,https://dans.knaw.nl/en/file-formats/programming-languages/netcdf/,https://dans.knaw.nl/bestandsformaten/programmeertaal/netcdf/,,
-Programming Languages,Text-Fabric,TRUE,https://dans.knaw.nl/en/file-formats/programming-languages/text-fabric/,https://dans.knaw.nl/bestandsformaten/programmeertaal/text-fabric/,,
-Programming Languages,Python,TRUE,,,,
-Spreadsheets,ODS (.ods),TRUE,https://dans.knaw.nl/en/file-formats/spreadsheets/ods/,https://dans.knaw.nl/bestandsformaten/spreadsheets/ods/,,
-Spreadsheets,CSV (.csv),TRUE,https://dans.knaw.nl/en/file-formats/spreadsheets/csv/,https://dans.knaw.nl/nl/bestandsformaten/spreadsheets/csv/,,
-Spreadsheets,Microsoft Excel (.xls),,https://dans.knaw.nl/en/file-formats/spreadsheets/microsoft-excel/,https://dans.knaw.nl/bestandsformaten/spreadsheets/microsoft-excel/,,
-Spreadsheets,Office Open XML Workbook (.xlsx),,https://dans.knaw.nl/en/file-formats/spreadsheets/office-open-xml-workbook/,https://dans.knaw.nl/bestandsformaten/spreadsheets/office-open-xml-workbook/,,
-Spreadsheets,PDF/A (.pdf),,https://dans.knaw.nl/en/file-formats/spreadsheets/pdf-a/,https://dans.knaw.nl/bestandsformaten/spreadsheets/pdf-a/,,
-Databases,SQL (.sql),TRUE,https://dans.knaw.nl/en/file-formats/databases/sql/,https://dans.knaw.nl/bestandsformaten/databases/sql/,,
-Databases,SIARD (.siard),TRUE,https://dans.knaw.nl/en/file-formats/databases/siard/,https://dans.knaw.nl/bestandsformaten/databases/siard/,,
-Databases,CSV (.csv),TRUE,https://dans.knaw.nl/en/file-formats/databases/csv/,https://dans.knaw.nl/nl/bestandsformaten/databases/csv/,,
-Databases,"Microsoft Access (.mdb, .accdb)",,https://dans.knaw.nl/en/file-formats/databases/microsoft-access/,https://dans.knaw.nl/bestandsformaten/databases/microsoft-access/,,
-Databases,dBase (.dbf),,https://dans.knaw.nl/en/file-formats/databases/dbase/,https://dans.knaw.nl/bestandsformaten/databases/dbase/,,
-Databases,"HDF5 (.hdf5, .he5, .h5)",,https://dans.knaw.nl/en/file-formats/databases/hierarchical-data-format-hdf5/,https://dans.knaw.nl/bestandsformaten/databases/hierarchical-data-format-hdf5/,,
-Statistical data,SPSS (.dat/.sps),,,https://dans.knaw.nl/en/file-formats/statistical-data/data-and-setup/,https://dans.knaw.nl/bestandsformaten/statistische-data/data-en-setup/,
-Statistical data,JASP,,https://dans.knaw.nl/en/file-formats/statistical-data/jasp/,https://dans.knaw.nl/nl/bestandsformaten/statistische-data/jasp/,,
-Statistical data,R,,https://dans.knaw.nl/en/file-formats/statistical-data/r/,https://dans.knaw.nl/bestandsformaten/statistische-data/r/,,
-Statistical data,SPSS Portable (.por),,https://dans.knaw.nl/en/file-formats/statistical-data/spss-portable/,https://dans.knaw.nl/bestandsformaten/statistische-data/spss-portable/,,
-Statistical data,SPSS (.sav),,https://dans.knaw.nl/en/file-formats/statistical-data/spss-sav/,https://dans.knaw.nl/bestandsformaten/statistische-data/spss-sav/,,
-Statistical data,STATA (.dta),,https://dans.knaw.nl/en/file-formats/statistical-data/stata/,https://dans.knaw.nl/bestandsformaten/statistische-data/stata/,,
-Statistical data,SAS (.7dat,,,,https://dans.knaw.nl/en/file-formats/statistical-data/sas/,https://dans.knaw.nl/bestandsformaten/statistische-data/sas/
-Raster images,"JPEG (.jpg, .jpeg)",,https://dans.knaw.nl/en/file-formats/images-raster/jpeg/,https://dans.knaw.nl/bestandsformaten/afbeeldingen-raster/jpeg/,,
-Raster images,"TIFF (.tif, .tiff)",,https://dans.knaw.nl/en/file-formats/images-raster/tiff/,https://dans.knaw.nl/bestandsformaten/afbeeldingen-raster/tiff/,,
-Raster images,PNG (.png),,https://dans.knaw.nl/en/file-formats/images-raster/png/,https://dans.knaw.nl/bestandsformaten/afbeeldingen-raster/png/,,
-Raster images,JPEG 2000 (.jp2),,https://dans.knaw.nl/en/file-formats/images-raster/jpeg-2000/,https://dans.knaw.nl/bestandsformaten/afbeeldingen-raster/jpeg-2000/,,
-Raster images,DICOM (.dcm),,https://dans.knaw.nl/en/file-formats/images-raster/dicom/,https://dans.knaw.nl/bestandsformaten/afbeeldingen-raster/dicom/,,
-Vector images,SVG (.svg),,https://dans.knaw.nl/en/file-formats/images-vector/svg/,https://dans.knaw.nl/bestandsformaten/afbeeldingen-vector/svg/,,
-Vector images,Adobe Illustrator (.ai),,https://dans.knaw.nl/en/file-formats/images-vector/adobe-illustrator/,https://dans.knaw.nl/bestandsformaten/afbeeldingen-vector/adobe-illustrator/,,
-Vector images,EPS (.eps),,https://dans.knaw.nl/en/file-formats/images-vector/eps/,https://dans.knaw.nl/bestandsformaten/afbeeldingen-vector/eps/,,
-Vector images,"WMF/EMF (.wmf, .emf)",,https://dans.knaw.nl/en/file-formats/images-vector/wmf-emf/,https://dans.knaw.nl/bestandsformaten/afbeeldingen-vector/wmf-emf/,,
-Vector images,CDR (.cdr),,https://dans.knaw.nl/en/file-formats/images-vector/cdr/,https://dans.knaw.nl/bestandsformaten/afbeeldingen-vector/cdr/,,
-Audio,BWF (.bwf),,https://dans.knaw.nl/en/file-formats/audio/bwf/,https://dans.knaw.nl/bestandsformaten/audio/bwf/,,
-Audio,MXF (.mxf),,https://dans.knaw.nl/en/file-formats/audio/mxf/,https://dans.knaw.nl/bestandsformaten/audio/mxf/,,
-Audio,Matroska (.mka),,https://dans.knaw.nl/en/file-formats/audio/matroska/,https://dans.knaw.nl/bestandsformaten/audio/matroska/,,
-Audio,FLAC (.flac),,https://dans.knaw.nl/en/file-formats/audio/flac/,https://dans.knaw.nl/bestandsformaten/audio/flac/,,
-Audio,OPUS,,https://dans.knaw.nl/en/file-formats/audio/opus/,https://dans.knaw.nl/bestandsformaten/audio/opus/,,
-Audio,WAVE (.wav),,https://dans.knaw.nl/en/file-formats/audio/wave/,https://dans.knaw.nl/bestandsformaten/audio/wave/,,
-Audio,MP3 (.mp3),,https://dans.knaw.nl/en/file-formats/audio/mp3/,https://dans.knaw.nl/bestandsformaten/audio/mp3/,,
-Audio,"AAC (.aac, .m4a)",,https://dans.knaw.nl/en/file-formats/audio/aac/,https://dans.knaw.nl/bestandsformaten/audio/aac/,,
-Audio,"AIFF (.aif, .aiff)",,https://dans.knaw.nl/en/file-formats/audio/aiff/,https://dans.knaw.nl/bestandsformaten/audio/aiff/,,
-Audio,OGG (.ogg),,https://dans.knaw.nl/en/file-formats/audio/ogg/,https://dans.knaw.nl/bestandsformaten/audio/ogg/,,
-Video,MXF (.mxf),,https://dans.knaw.nl/en/file-formats/video/mxf/,https://dans.knaw.nl/bestandsformaten/video/mxf/,,
-Video,Matroska (.mkv),,https://dans.knaw.nl/en/file-formats/video/matroska/,https://dans.knaw.nl/bestandsformaten/video/matroska/,,
-Video,"MPEG-4 (.mp4, .m4a, .m4v, ...)",,https://dans.knaw.nl/en/file-formats/video/mpeg-4/,https://dans.knaw.nl/bestandsformaten/video/mpeg-4/,,
-Video,"MPEG-2 (.mpg, .mpeg, .m2v, .mpg2, ...)",,https://dans.knaw.nl/en/file-formats/video/mpeg-2/,https://dans.knaw.nl/bestandsformaten/video/mpeg-2/,,
-Video,AVI (.avi),,https://dans.knaw.nl/en/file-formats/video/avi/,https://dans.knaw.nl/bestandsformaten/video/avi/,,
-Video,"QuickTime (.mov, .qt)",,https://dans.knaw.nl/en/file-formats/video/quicktime/,https://dans.knaw.nl/bestandsformaten/video/quicktime/,,
-Computer Aided Design (CAD),AutoCAD DXF version R12 (ASCII) (.dxf),,https://dans.knaw.nl/en/file-formats/computer-aided-design-cad/autocad-dxf-versie-r12-ascii/,https://dans.knaw.nl/bestandsformaten/computer-aided-design-cad/autocad-dxf-versie-r12-ascii/,,
-Computer Aided Design (CAD),SVG (.svg),,https://dans.knaw.nl/en/file-formats/computer-aided-design-cad/svg/,https://dans.knaw.nl/bestandsformaten/computer-aided-design-cad/svg/,,
-Computer Aided Design (CAD),"AutoCAD DXF, version different than R12 (ASCII) (.dxf)",,https://dans.knaw.nl/en/file-formats/computer-aided-design-cad/autocad-dxf-versie-anders-dan-r12-ascii/,https://dans.knaw.nl/bestandsformaten/computer-aided-design-cad/autocad-dxf-versie-anders-dan-r12-ascii/,,
-Computer Aided Design (CAD),DWG (.dwg),,https://dans.knaw.nl/en/file-formats/computer-aided-design-cad/dwg/,https://dans.knaw.nl/bestandsformaten/computer-aided-design-cad/dwg/,,
-Computer Aided Design (CAD),DGN (.dgn),,https://dans.knaw.nl/en/file-formats/computer-aided-design-cad/dgn/,https://dans.knaw.nl/bestandsformaten/computer-aided-design-cad/dgn/,,
-Geographical Information Systems (GIS),GML (.gml),,https://dans.knaw.nl/en/file-formats/geographical-information-systems-gis/gml/,https://dans.knaw.nl/bestandsformaten/geografische-informatie-systemen-gis/gml/,,
-Geographical Information Systems (GIS),MIF/MID (.mif/.mid),,https://dans.knaw.nl/en/file-formats/geographical-information-systems-gis/mif-mid/,https://dans.knaw.nl/bestandsformaten/geografische-informatie-systemen-gis/mif-mid/,,
-Geographical Information Systems (GIS),GeoJSON (.json),,,,,
-Geographical Information Systems (GIS),GeoPackage (.gpgk),,,,,
-Geographical Information Systems (GIS),Esri Shapefiles (.shp & related files),,https://dans.knaw.nl/en/file-formats/geographical-information-systems-gis/esri-shapefile/,https://dans.knaw.nl/bestandsformaten/geografische-informatie-systemen-gis/esri-shapefile/,,
-Geographical Information Systems (GIS),MapInfo (.tab & related files),,https://dans.knaw.nl/en/file-formats/geographical-information-systems-gis/mapinfo/,https://dans.knaw.nl/bestandsformaten/geografische-informatie-systemen-gis/mapinfo/,,
-Geographical Information Systems (GIS),"KML (.kml, kmz)",,https://dans.knaw.nl/en/file-formats/geographical-information-systems-gis/kml/,https://dans.knaw.nl/bestandsformaten/geografische-informatie-systemen-gis/kml/,,
-Geographical Information Systems (GIS),Esri Geodatabase (.gdb),,https://dans.knaw.nl/en/file-formats/geographical-information-systems-gis/esri-geodatabase/,https://dans.knaw.nl/bestandsformaten/geografische-informatie-systemen-gis/esri-geodatabase/,,
-Geographical Information Systems (GIS),"Project files / Workspaces (.mxd, .wor, .qgs)",,https://dans.knaw.nl/en/file-formats/geographical-information-systems-gis/project-files-workspaces/,https://dans.knaw.nl/bestandsformaten/geografische-informatie-systemen-gis/projectbestanden-workspaces/,,
-Georeferenced images,"GeoTIFF (.tif, .tiff)",,https://dans.knaw.nl/en/file-formats/images-georeference/geotiff/,https://dans.knaw.nl/bestandsformaten/afbeeldingen-georeferentie/geotiff/,,
-Georeferenced images,"TIFF World File (.tfw & .tif, possibly with additional files)",,https://dans.knaw.nl/en/file-formats/images-georeference/tiff-world-file/,https://dans.knaw.nl/bestandsformaten/afbeeldingen-georeferentie/tiff-world-file/,,
-Georeferenced images,"JPEG World File (.jgw & .jpg, possibly with additional files)",,https://dans.knaw.nl/en/file-formats/images-georeference/jpeg-world-file/,https://dans.knaw.nl/bestandsformaten/afbeeldingen-georeferentie/jpeg-world-file/,,
-Georeferenced images,ERDAS IMAGINE File Format (.img),,https://dans.knaw.nl/en/file-formats/images-georeference/erdas-imagine-file-format/,https://dans.knaw.nl/bestandsformaten/afbeeldingen-georeferentie/erdas-imagine-file-format/,,
-Raster GIS,,,https://dans.knaw.nl/en/file-formats/raster-gis/,https://dans.knaw.nl/bestandsformaten/raster-gis/,,
-Raster GIS,"ASCII GRID (.asc, .txt)",,https://dans.knaw.nl/en/file-formats/raster-gis/ascii-grid/,https://dans.knaw.nl/bestandsformaten/raster-gis/ascii-grid/,,
-Raster GIS,Esri GRID (.grd & related files),,https://dans.knaw.nl/en/file-formats/raster-gis/esri-grid/,https://dans.knaw.nl/bestandsformaten/raster-gis/esri-grid/,,
-Raster GIS,Surfer Grid (.grd,,,https://dans.knaw.nl/en/file-formats/raster-gis/surfer-grid/,https://dans.knaw.nl/bestandsformaten/raster-gis/surfer-grid/,
-Raster GIS,ERDAS IMAGINE File Format (.img),,https://dans.knaw.nl/en/file-formats/raster-gis/erdas-imagine-file-format/,https://dans.knaw.nl/bestandsformaten/raster-gis/erdas-imagine-file-format/,,
-3D,WaveFront Object (.obj),,https://dans.knaw.nl/en/file-formats/3d/wavefront-object/,https://dans.knaw.nl/bestandsformaten/3d/wavefront-object/,,
-3D,Polygon file format (.ply),,https://dans.knaw.nl/en/file-formats/3d/polygon-file-format/,https://dans.knaw.nl/bestandsformaten/3d/polygon-file-format/,,
-3D,glTF (.gltf,,Samantha 2024-12-10,https://dans.knaw.nl/en/file-formats/3d/gltf/,https://dans.knaw.nl/nl/bestandsformaten/3d/gltf/,
-3D,LASer (.las,,Samantha 2024-12-10,https://dans.knaw.nl/en/file-formats/3d/laser/,https://dans.knaw.nl/nl/bestandsformaten/3d/laser/,
-3D,Google Draco (.drc),,https://dans.knaw.nl/en/file-formats/3d/google-draco/,https://dans.knaw.nl/nl/bestandsformaten/3d/google-draco/,,
-3D,X3D (.x3d),,https://dans.knaw.nl/en/file-formats/3d/x3d/,https://dans.knaw.nl/bestandsformaten/3d/x3d/,,
-3D,COLLADA (.dae),,https://dans.knaw.nl/en/file-formats/3d/collada/,https://dans.knaw.nl/bestandsformaten/3d/collada/,,
-3D,Autodesk FBX (.fbx),,https://dans.knaw.nl/en/file-formats/3d/autodesk-fbx/,https://dans.knaw.nl/bestandsformaten/3d/autodesk-fbx/,,
-3D,Blender (.blend),,https://dans.knaw.nl/en/file-formats/3d/blender/,https://dans.knaw.nl/nl/bestandsformaten/3d/blender/,,
-3D,3D PDF (.pdf),,https://dans.knaw.nl/en/file-formats/3d/adobe-portable-document-format-3d-pdf/,https://dans.knaw.nl/bestandsformaten/3d/adobe-portable-document-format-3d-pdf/,,
-3D,Artec (.a3d),,https://dans.knaw.nl/en/file-formats/3d/artec/,https://dans.knaw.nl/nl/bestandsformaten/3d/artec/,,
-3D,Agisoft Metashape (.psz/.psx),,https://dans.knaw.nl/en/file-formats/3d/agisoft-metashape/,https://dans.knaw.nl/nl/bestandsformaten/3d/agisoft-metashape/,,
-3D,IFC (.ifc),,https://dans.knaw.nl/en/file-formats/3d/industry-foundation-classes/,https://dans.knaw.nl/nl/bestandsformaten/3d/ifc/,,
-3D,STL (.stl),,https://dans.knaw.nl/en/file-formats/3d/stl/,https://dans.knaw.nl/nl/bestandsformaten/3d/stl/,,
-3D,VRML (.wrl,,Valentijn 2024-11,Samantha 2024-12-10,https://dans.knaw.nl/en/file-formats/3d/vrml/,https://dans.knaw.nl/nl/bestandsformaten/3d/vrml/
-RDF,RDF/XML (.rdf),,https://dans.knaw.nl/en/file-formats/rdf-2/rdf-xml/,https://dans.knaw.nl/nl/bestandsformaten/rdf-2/rdf-xml/,,
-RDF,Trig (.trig),,https://dans.knaw.nl/en/file-formats/rdf-2/trig/,https://dans.knaw.nl/nl/bestandsformaten/rdf-2/trig/,,
-RDF,Turtle (.ttl),,https://dans.knaw.nl/en/file-formats/rdf-2/turtle/,https://dans.knaw.nl/nl/bestandsformaten/rdf-2/turtle/,,
-RDF,NTriples (.nt),,https://dans.knaw.nl/en/file-formats/rdf-2/n-triples/,https://dans.knaw.nl/nl/bestandsformaten/rdf-2/n-triples/,,
-RDF,JSON-LD,,https://dans.knaw.nl/nl/bestandsformaten/rdf-2/json-ld/,https://dans.knaw.nl/en/file-formats/rdf-2/json-ld/,,
-Computer Assisted Qualitative Data Analysis (CAQDAS),REFI-QDA (Qualitative Data Analysis),,https://dans.knaw.nl/en/file-formats/computer-assisted-qualitative-data-analysis-caqdas/refi-qda-qualitative-data-analysis/,https://dans.knaw.nl/bestandsformaten/computer-assisted-qualitative-data-analysis-caqdas/refi-qda-qualitative-data-analysis/,,
-Computer Assisted Qualitative Data Analysis (CAQDAS),ATLAS.TI copy bundle,,https://dans.knaw.nl/en/file-formats/computer-assisted-qualitative-data-analysis-caqdas/atlas-ti-copy-bundle-and-nvivo-project-file-2/,https://dans.knaw.nl/bestandsformaten/computer-assisted-qualitative-data-analysis-caqdas/atlas-ti-copy-bundle-en-nvivo-project-file/,,
-Computer Assisted Qualitative Data Analysis (CAQDAS),NVivo project file,,https://dans.knaw.nl/en/file-formats/computer-assisted-qualitative-data-analysis-caqdas/atlas-ti-copy-bundle-and-nvivo-project-file/,https://dans.knaw.nl/bestandsformaten/computer-assisted-qualitative-data-analysis-caqdas/atlas-ti-copy-bundle-en-nvivo-project-file-2/,,
+Collection,Concept,isPreferred,Stable URL English,Stable Nederlands URL
+Text documents,PDF/A (.pdf),preferredFileFormats,https://dans.knaw.nl/en/file-formats/text-documents/pdf-a/,https://dans.knaw.nl/bestandsformaten/tekstdocumenten/pdf-a/
+Text documents,ODT (.odt),preferredFileFormats,https://dans.knaw.nl/en/file-formats/text-documents/opendocument-text/,https://dans.knaw.nl/bestandsformaten/tekstdocumenten/opendocument-text-odt/
+Text documents,Microsoft Word (.doc),nonPreferredFileFormats,https://dans.knaw.nl/en/file-formats/text-documents/microsoft-word-and-office-open-xml/,https://dans.knaw.nl/bestandsformaten/tekstdocumenten/microsoft-word-doc-en-office-open-xml-docx/
+Text documents,Office Open XML (.docx),nonPreferredFileFormats,https://dans.knaw.nl/en/file-formats/text-documents/microsoft-word-and-office-open-xml/,https://dans.knaw.nl/bestandsformaten/tekstdocumenten/microsoft-word-doc-en-office-open-xml-docx/
+Text documents,Rich Text File (.rtf),nonPreferredFileFormats,https://dans.knaw.nl/en/file-formats/text-documents/rich-text-file-rtf/,https://dans.knaw.nl/bestandsformaten/tekstdocumenten/rich-text-file-rtf/
+Text documents,PDF other than PDF/A (.pdf),nonPreferredFileFormats,https://dans.knaw.nl/en/file-formats/text-documents/pdf-pdf/,https://dans.knaw.nl/bestandsformaten/tekstdocumenten/pdf-pdf/
+Plain text,Unicode text (.txt),preferredFileFormats,https://dans.knaw.nl/en/file-formats/plain-text/unicode/,https://dans.knaw.nl/bestandsformaten/platte-tekst/unicode/
+Plain text,Non-Unicode text (.txt),nonPreferredFileFormats,https://dans.knaw.nl/en/file-formats/plain-text/non-unicode/,https://dans.knaw.nl/bestandsformaten/platte-tekst/non-unicode/
+Markup language,XML (.xml),preferredFileFormats,https://dans.knaw.nl/en/file-formats/markup-language/xml/,https://dans.knaw.nl/bestandsformaten/opmaaktaal/xml/
+Markup language,HTML (.html),preferredFileFormats,https://dans.knaw.nl/en/file-formats/markup-language/html/,https://dans.knaw.nl/bestandsformaten/opmaaktaal/html/
+Markup language,.css,preferredFileFormats,https://dans.knaw.nl/en/file-formats/markup-language/css/,https://dans.knaw.nl/bestandsformaten/opmaaktaal/css/
+Markup language,.xslt,preferredFileFormats,https://dans.knaw.nl/en/file-formats/markup-language/xslt/,https://dans.knaw.nl/bestandsformaten/opmaaktaal/xslt/
+Markup language,.js,preferredFileFormats,https://dans.knaw.nl/bestandsformaten/opmaaktaal/script/,https://dans.knaw.nl/en/file-formats/markup-language/script/
+Markup language,.es,preferredFileFormats,https://dans.knaw.nl/bestandsformaten/opmaaktaal/script/,https://dans.knaw.nl/en/file-formats/markup-language/script/
+Markup language,SGML (.sgml),nonPreferredFileFormats,https://dans.knaw.nl/en/file-formats/markup-language/sgml/,https://dans.knaw.nl/bestandsformaten/opmaaktaal/sgml/
+Markup language,Markdown (.md),preferredFileFormats,https://dans.knaw.nl/en/file-formats/markup-language/markdown/,https://dans.knaw.nl/bestandsformaten/opmaaktaal/markdown/
+Programming Languages,MATLAB,preferredFileFormats,https://dans.knaw.nl/en/file-formats/programming-languages/matlab/,https://dans.knaw.nl/bestandsformaten/programmeertaal/matlab/
+Programming Languages,NetCDF,preferredFileFormats,https://dans.knaw.nl/en/file-formats/programming-languages/netcdf/,https://dans.knaw.nl/bestandsformaten/programmeertaal/netcdf/
+Programming Languages,Text-Fabric,preferredFileFormats,https://dans.knaw.nl/en/file-formats/programming-languages/text-fabric/,https://dans.knaw.nl/bestandsformaten/programmeertaal/text-fabric/
+Programming Languages,Python,preferredFileFormats,,
+Spreadsheets,ODS (.ods),preferredFileFormats,https://dans.knaw.nl/en/file-formats/spreadsheets/ods/,https://dans.knaw.nl/bestandsformaten/spreadsheets/ods/
+Spreadsheets,CSV (.csv),preferredFileFormats,https://dans.knaw.nl/en/file-formats/spreadsheets/csv/,https://dans.knaw.nl/nl/bestandsformaten/spreadsheets/csv/
+Spreadsheets,Microsoft Excel (.xls),nonPreferredFileFormats,https://dans.knaw.nl/en/file-formats/spreadsheets/microsoft-excel/,https://dans.knaw.nl/bestandsformaten/spreadsheets/microsoft-excel/
+Spreadsheets,Office Open XML Workbook (.xlsx),nonPreferredFileFormats,https://dans.knaw.nl/en/file-formats/spreadsheets/office-open-xml-workbook/,https://dans.knaw.nl/bestandsformaten/spreadsheets/office-open-xml-workbook/
+Spreadsheets,PDF/A (.pdf),nonPreferredFileFormats,https://dans.knaw.nl/en/file-formats/spreadsheets/pdf-a/,https://dans.knaw.nl/bestandsformaten/spreadsheets/pdf-a/
+Databases,SQL (.sql),preferredFileFormats,https://dans.knaw.nl/en/file-formats/databases/sql/,https://dans.knaw.nl/bestandsformaten/databases/sql/
+Databases,SIARD (.siard),preferredFileFormats,https://dans.knaw.nl/en/file-formats/databases/siard/,https://dans.knaw.nl/bestandsformaten/databases/siard/
+Databases,CSV (.csv),preferredFileFormats,https://dans.knaw.nl/en/file-formats/databases/csv/,https://dans.knaw.nl/nl/bestandsformaten/databases/csv/
+Databases,"Microsoft Access (.mdb, .accdb)",,https://dans.knaw.nl/en/file-formats/databases/microsoft-access/,https://dans.knaw.nl/bestandsformaten/databases/microsoft-access/
+Databases,dBase (.dbf),,https://dans.knaw.nl/en/file-formats/databases/dbase/,https://dans.knaw.nl/bestandsformaten/databases/dbase/
+Databases,"HDF5 (.hdf5, .he5, .h5)",,https://dans.knaw.nl/en/file-formats/databases/hierarchical-data-format-hdf5/,https://dans.knaw.nl/bestandsformaten/databases/hierarchical-data-format-hdf5/
+Statistical data,SPSS (.dat/.sps),,,https://dans.knaw.nl/en/file-formats/statistical-data/data-and-setup/
+Statistical data,JASP,,https://dans.knaw.nl/en/file-formats/statistical-data/jasp/,https://dans.knaw.nl/nl/bestandsformaten/statistische-data/jasp/
+Statistical data,R,,https://dans.knaw.nl/en/file-formats/statistical-data/r/,https://dans.knaw.nl/bestandsformaten/statistische-data/r/
+Statistical data,SPSS Portable (.por),,https://dans.knaw.nl/en/file-formats/statistical-data/spss-portable/,https://dans.knaw.nl/bestandsformaten/statistische-data/spss-portable/
+Statistical data,SPSS (.sav),,https://dans.knaw.nl/en/file-formats/statistical-data/spss-sav/,https://dans.knaw.nl/bestandsformaten/statistische-data/spss-sav/
+Statistical data,STATA (.dta),,https://dans.knaw.nl/en/file-formats/statistical-data/stata/,https://dans.knaw.nl/bestandsformaten/statistische-data/stata/
+Statistical data,SAS (.7dat,,,
+Raster images,"JPEG (.jpg, .jpeg)",,https://dans.knaw.nl/en/file-formats/images-raster/jpeg/,https://dans.knaw.nl/bestandsformaten/afbeeldingen-raster/jpeg/
+Raster images,"TIFF (.tif, .tiff)",,https://dans.knaw.nl/en/file-formats/images-raster/tiff/,https://dans.knaw.nl/bestandsformaten/afbeeldingen-raster/tiff/
+Raster images,PNG (.png),,https://dans.knaw.nl/en/file-formats/images-raster/png/,https://dans.knaw.nl/bestandsformaten/afbeeldingen-raster/png/
+Raster images,JPEG 2000 (.jp2),,https://dans.knaw.nl/en/file-formats/images-raster/jpeg-2000/,https://dans.knaw.nl/bestandsformaten/afbeeldingen-raster/jpeg-2000/
+Raster images,DICOM (.dcm),,https://dans.knaw.nl/en/file-formats/images-raster/dicom/,https://dans.knaw.nl/bestandsformaten/afbeeldingen-raster/dicom/
+Vector images,SVG (.svg),,https://dans.knaw.nl/en/file-formats/images-vector/svg/,https://dans.knaw.nl/bestandsformaten/afbeeldingen-vector/svg/
+Vector images,Adobe Illustrator (.ai),,https://dans.knaw.nl/en/file-formats/images-vector/adobe-illustrator/,https://dans.knaw.nl/bestandsformaten/afbeeldingen-vector/adobe-illustrator/
+Vector images,EPS (.eps),,https://dans.knaw.nl/en/file-formats/images-vector/eps/,https://dans.knaw.nl/bestandsformaten/afbeeldingen-vector/eps/
+Vector images,"WMF/EMF (.wmf, .emf)",,https://dans.knaw.nl/en/file-formats/images-vector/wmf-emf/,https://dans.knaw.nl/bestandsformaten/afbeeldingen-vector/wmf-emf/
+Vector images,CDR (.cdr),,https://dans.knaw.nl/en/file-formats/images-vector/cdr/,https://dans.knaw.nl/bestandsformaten/afbeeldingen-vector/cdr/
+Audio,BWF (.bwf),,https://dans.knaw.nl/en/file-formats/audio/bwf/,https://dans.knaw.nl/bestandsformaten/audio/bwf/
+Audio,MXF (.mxf),,https://dans.knaw.nl/en/file-formats/audio/mxf/,https://dans.knaw.nl/bestandsformaten/audio/mxf/
+Audio,Matroska (.mka),,https://dans.knaw.nl/en/file-formats/audio/matroska/,https://dans.knaw.nl/bestandsformaten/audio/matroska/
+Audio,FLAC (.flac),,https://dans.knaw.nl/en/file-formats/audio/flac/,https://dans.knaw.nl/bestandsformaten/audio/flac/
+Audio,OPUS,,https://dans.knaw.nl/en/file-formats/audio/opus/,https://dans.knaw.nl/bestandsformaten/audio/opus/
+Audio,WAVE (.wav),,https://dans.knaw.nl/en/file-formats/audio/wave/,https://dans.knaw.nl/bestandsformaten/audio/wave/
+Audio,MP3 (.mp3),,https://dans.knaw.nl/en/file-formats/audio/mp3/,https://dans.knaw.nl/bestandsformaten/audio/mp3/
+Audio,"AAC (.aac, .m4a)",,https://dans.knaw.nl/en/file-formats/audio/aac/,https://dans.knaw.nl/bestandsformaten/audio/aac/
+Audio,"AIFF (.aif, .aiff)",,https://dans.knaw.nl/en/file-formats/audio/aiff/,https://dans.knaw.nl/bestandsformaten/audio/aiff/
+Audio,OGG (.ogg),,https://dans.knaw.nl/en/file-formats/audio/ogg/,https://dans.knaw.nl/bestandsformaten/audio/ogg/
+Video,MXF (.mxf),,https://dans.knaw.nl/en/file-formats/video/mxf/,https://dans.knaw.nl/bestandsformaten/video/mxf/
+Video,Matroska (.mkv),,https://dans.knaw.nl/en/file-formats/video/matroska/,https://dans.knaw.nl/bestandsformaten/video/matroska/
+Video,"MPEG-4 (.mp4, .m4a, .m4v, ...)",,https://dans.knaw.nl/en/file-formats/video/mpeg-4/,https://dans.knaw.nl/bestandsformaten/video/mpeg-4/
+Video,"MPEG-2 (.mpg, .mpeg, .m2v, .mpg2, ...)",,https://dans.knaw.nl/en/file-formats/video/mpeg-2/,https://dans.knaw.nl/bestandsformaten/video/mpeg-2/
+Video,AVI (.avi),,https://dans.knaw.nl/en/file-formats/video/avi/,https://dans.knaw.nl/bestandsformaten/video/avi/
+Video,"QuickTime (.mov, .qt)",,https://dans.knaw.nl/en/file-formats/video/quicktime/,https://dans.knaw.nl/bestandsformaten/video/quicktime/
+Computer Aided Design (CAD),AutoCAD DXF version R12 (ASCII) (.dxf),,https://dans.knaw.nl/en/file-formats/computer-aided-design-cad/autocad-dxf-versie-r12-ascii/,https://dans.knaw.nl/bestandsformaten/computer-aided-design-cad/autocad-dxf-versie-r12-ascii/
+Computer Aided Design (CAD),SVG (.svg),,https://dans.knaw.nl/en/file-formats/computer-aided-design-cad/svg/,https://dans.knaw.nl/bestandsformaten/computer-aided-design-cad/svg/
+Computer Aided Design (CAD),"AutoCAD DXF, version different than R12 (ASCII) (.dxf)",,https://dans.knaw.nl/en/file-formats/computer-aided-design-cad/autocad-dxf-versie-anders-dan-r12-ascii/,https://dans.knaw.nl/bestandsformaten/computer-aided-design-cad/autocad-dxf-versie-anders-dan-r12-ascii/
+Computer Aided Design (CAD),DWG (.dwg),,https://dans.knaw.nl/en/file-formats/computer-aided-design-cad/dwg/,https://dans.knaw.nl/bestandsformaten/computer-aided-design-cad/dwg/
+Computer Aided Design (CAD),DGN (.dgn),,https://dans.knaw.nl/en/file-formats/computer-aided-design-cad/dgn/,https://dans.knaw.nl/bestandsformaten/computer-aided-design-cad/dgn/
+Geographical Information Systems (GIS),GML (.gml),,https://dans.knaw.nl/en/file-formats/geographical-information-systems-gis/gml/,https://dans.knaw.nl/bestandsformaten/geografische-informatie-systemen-gis/gml/
+Geographical Information Systems (GIS),MIF/MID (.mif/.mid),,https://dans.knaw.nl/en/file-formats/geographical-information-systems-gis/mif-mid/,https://dans.knaw.nl/bestandsformaten/geografische-informatie-systemen-gis/mif-mid/
+Geographical Information Systems (GIS),GeoJSON (.json),,,
+Geographical Information Systems (GIS),GeoPackage (.gpgk),,,
+Geographical Information Systems (GIS),Esri Shapefiles (.shp & related files),,https://dans.knaw.nl/en/file-formats/geographical-information-systems-gis/esri-shapefile/,https://dans.knaw.nl/bestandsformaten/geografische-informatie-systemen-gis/esri-shapefile/
+Geographical Information Systems (GIS),MapInfo (.tab & related files),,https://dans.knaw.nl/en/file-formats/geographical-information-systems-gis/mapinfo/,https://dans.knaw.nl/bestandsformaten/geografische-informatie-systemen-gis/mapinfo/
+Geographical Information Systems (GIS),"KML (.kml, kmz)",,https://dans.knaw.nl/en/file-formats/geographical-information-systems-gis/kml/,https://dans.knaw.nl/bestandsformaten/geografische-informatie-systemen-gis/kml/
+Geographical Information Systems (GIS),Esri Geodatabase (.gdb),,https://dans.knaw.nl/en/file-formats/geographical-information-systems-gis/esri-geodatabase/,https://dans.knaw.nl/bestandsformaten/geografische-informatie-systemen-gis/esri-geodatabase/
+Geographical Information Systems (GIS),"Project files / Workspaces (.mxd, .wor, .qgs)",,https://dans.knaw.nl/en/file-formats/geographical-information-systems-gis/project-files-workspaces/,https://dans.knaw.nl/bestandsformaten/geografische-informatie-systemen-gis/projectbestanden-workspaces/
+Georeferenced images,"GeoTIFF (.tif, .tiff)",,https://dans.knaw.nl/en/file-formats/images-georeference/geotiff/,https://dans.knaw.nl/bestandsformaten/afbeeldingen-georeferentie/geotiff/
+Georeferenced images,"TIFF World File (.tfw & .tif, possibly with additional files)",,https://dans.knaw.nl/en/file-formats/images-georeference/tiff-world-file/,https://dans.knaw.nl/bestandsformaten/afbeeldingen-georeferentie/tiff-world-file/
+Georeferenced images,"JPEG World File (.jgw & .jpg, possibly with additional files)",,https://dans.knaw.nl/en/file-formats/images-georeference/jpeg-world-file/,https://dans.knaw.nl/bestandsformaten/afbeeldingen-georeferentie/jpeg-world-file/
+Georeferenced images,ERDAS IMAGINE File Format (.img),,https://dans.knaw.nl/en/file-formats/images-georeference/erdas-imagine-file-format/,https://dans.knaw.nl/bestandsformaten/afbeeldingen-georeferentie/erdas-imagine-file-format/
+Raster GIS,,,https://dans.knaw.nl/en/file-formats/raster-gis/,https://dans.knaw.nl/bestandsformaten/raster-gis/
+Raster GIS,"ASCII GRID (.asc, .txt)",,https://dans.knaw.nl/en/file-formats/raster-gis/ascii-grid/,https://dans.knaw.nl/bestandsformaten/raster-gis/ascii-grid/
+Raster GIS,Esri GRID (.grd & related files),,https://dans.knaw.nl/en/file-formats/raster-gis/esri-grid/,https://dans.knaw.nl/bestandsformaten/raster-gis/esri-grid/
+Raster GIS,Surfer Grid (.grd,,,https://dans.knaw.nl/en/file-formats/raster-gis/surfer-grid/
+Raster GIS,ERDAS IMAGINE File Format (.img),,https://dans.knaw.nl/en/file-formats/raster-gis/erdas-imagine-file-format/,https://dans.knaw.nl/bestandsformaten/raster-gis/erdas-imagine-file-format/
+3D,WaveFront Object (.obj),,https://dans.knaw.nl/en/file-formats/3d/wavefront-object/,https://dans.knaw.nl/bestandsformaten/3d/wavefront-object/
+3D,Polygon file format (.ply),,https://dans.knaw.nl/en/file-formats/3d/polygon-file-format/,https://dans.knaw.nl/bestandsformaten/3d/polygon-file-format/
+3D,glTF (.gltf,,Samantha 2024-12-10,https://dans.knaw.nl/en/file-formats/3d/gltf/
+3D,LASer (.las,,Samantha 2024-12-10,https://dans.knaw.nl/en/file-formats/3d/laser/
+3D,Google Draco (.drc),,https://dans.knaw.nl/en/file-formats/3d/google-draco/,https://dans.knaw.nl/nl/bestandsformaten/3d/google-draco/
+3D,X3D (.x3d),,https://dans.knaw.nl/en/file-formats/3d/x3d/,https://dans.knaw.nl/bestandsformaten/3d/x3d/
+3D,COLLADA (.dae),,https://dans.knaw.nl/en/file-formats/3d/collada/,https://dans.knaw.nl/bestandsformaten/3d/collada/
+3D,Autodesk FBX (.fbx),,https://dans.knaw.nl/en/file-formats/3d/autodesk-fbx/,https://dans.knaw.nl/bestandsformaten/3d/autodesk-fbx/
+3D,Blender (.blend),,https://dans.knaw.nl/en/file-formats/3d/blender/,https://dans.knaw.nl/nl/bestandsformaten/3d/blender/
+3D,3D PDF (.pdf),,https://dans.knaw.nl/en/file-formats/3d/adobe-portable-document-format-3d-pdf/,https://dans.knaw.nl/bestandsformaten/3d/adobe-portable-document-format-3d-pdf/
+3D,Artec (.a3d),,https://dans.knaw.nl/en/file-formats/3d/artec/,https://dans.knaw.nl/nl/bestandsformaten/3d/artec/
+3D,Agisoft Metashape (.psz/.psx),,https://dans.knaw.nl/en/file-formats/3d/agisoft-metashape/,https://dans.knaw.nl/nl/bestandsformaten/3d/agisoft-metashape/
+3D,IFC (.ifc),,https://dans.knaw.nl/en/file-formats/3d/industry-foundation-classes/,https://dans.knaw.nl/nl/bestandsformaten/3d/ifc/
+3D,STL (.stl),,https://dans.knaw.nl/en/file-formats/3d/stl/,https://dans.knaw.nl/nl/bestandsformaten/3d/stl/
+3D,VRML (.wrl,,Valentijn 2024-11,Samantha 2024-12-10
+RDF,RDF/XML (.rdf),,https://dans.knaw.nl/en/file-formats/rdf-2/rdf-xml/,https://dans.knaw.nl/nl/bestandsformaten/rdf-2/rdf-xml/
+RDF,Trig (.trig),,https://dans.knaw.nl/en/file-formats/rdf-2/trig/,https://dans.knaw.nl/nl/bestandsformaten/rdf-2/trig/
+RDF,Turtle (.ttl),,https://dans.knaw.nl/en/file-formats/rdf-2/turtle/,https://dans.knaw.nl/nl/bestandsformaten/rdf-2/turtle/
+RDF,NTriples (.nt),,https://dans.knaw.nl/en/file-formats/rdf-2/n-triples/,https://dans.knaw.nl/nl/bestandsformaten/rdf-2/n-triples/
+RDF,JSON-LD,,https://dans.knaw.nl/nl/bestandsformaten/rdf-2/json-ld/,https://dans.knaw.nl/en/file-formats/rdf-2/json-ld/
+Computer Assisted Qualitative Data Analysis (CAQDAS),REFI-QDA (Qualitative Data Analysis),,https://dans.knaw.nl/en/file-formats/computer-assisted-qualitative-data-analysis-caqdas/refi-qda-qualitative-data-analysis/,https://dans.knaw.nl/bestandsformaten/computer-assisted-qualitative-data-analysis-caqdas/refi-qda-qualitative-data-analysis/
+Computer Assisted Qualitative Data Analysis (CAQDAS),ATLAS.TI copy bundle,,https://dans.knaw.nl/en/file-formats/computer-assisted-qualitative-data-analysis-caqdas/atlas-ti-copy-bundle-and-nvivo-project-file-2/,https://dans.knaw.nl/bestandsformaten/computer-assisted-qualitative-data-analysis-caqdas/atlas-ti-copy-bundle-en-nvivo-project-file/
+Computer Assisted Qualitative Data Analysis (CAQDAS),NVivo project file,,https://dans.knaw.nl/en/file-formats/computer-assisted-qualitative-data-analysis-caqdas/atlas-ti-copy-bundle-and-nvivo-project-file/,https://dans.knaw.nl/bestandsformaten/computer-assisted-qualitative-data-analysis-caqdas/atlas-ti-copy-bundle-en-nvivo-project-file-2/
