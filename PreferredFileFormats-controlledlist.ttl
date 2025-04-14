@@ -1,0 +1,63 @@
+@prefix : <http://vocabularies.dans.knaw.nl/pff/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@base <http://vocabularies.dans.knaw.nl/pff/> .
+
+<http://vocabularies.dans.knaw.nl/pff> rdf:type owl:Ontology ;
+                                        owl:versionIRI <http://vocabularies.dans.knaw.nl/pff/0.0.1> .
+
+
+
+:preferredFileFormats rdf:type skos:ConceptScheme .
+
+
+:nonPreferredFileFormats rdf:type skos:ConceptScheme .
+
+
+
+:textDocuments rdf:type skos:Collection .
+
+
+:ODT rdf:type skos:Concept ;
+      skos:inScheme :preferredFileFormats;
+      skos:member :textDocuments .
+
+
+:PDFA rdf:type skos:Concept ;
+      skos:inScheme :preferredFileFormats;
+      skos:prefLabel "PDF/A (.pdf)" ;
+      skos:definition "PDF, the “Portable Document Format” developed by software giant Adobe, has the PDF/A subtype designed for long-term sustainability. PDF/A is internationally held as the standard for (formatted) text documents. A PDF/A is a stand-alone document: all fonts and images are included in the file, so that it does not depend on other files on the computer to display the content correctly. PDF/A has a number of subtypes. The PDF/A-1a subtype sets further requirements for the text within the document and is recommended for text documents made entirely with the computer (born-digital). The PDF/A-1b subtype is more suitable for digitized documents. Many computers will already have software installed with which PDF files can be opened, if not the Adobe Reader can be downloaded for free. Adobe software for creating PDF files is not free, but various free software packages such as OpenOffice and IrfanView also offer PDF support. There are also print programs with which documents can be “printed” to a PDF document, for example the free Bullzip PDF printer. When text documents are created or converted from non-preferred formats such as Microsoft Word, PDF/A is the preferred format for long-term durability and accessibility.
+However, a conversion from regular PDF to PDF/A is undesirable. If an original text document is a regular PDF, a conversion to PDF/A will offer little added value. In addition, such a conversion even offers the possibility of data loss. That is why original PDF documents that are not PDF/A are also accepted by DANS and included as such in the archive. However, DANS cannot guarantee the accessibility and durability of regular PDF documents. PDF/A is a preferred format for file type Text documents and non-preferred format for file type Spreadsheets."@en, 
+"PDF, het ‘Portable Document Format’ dat wordt ontwikkeld door softwaregigant Adobe, kent het subtype PDF/A dat is ontworpen voor duurzaamheid op de lange termijn. PDF/A wordt internationaal aangehouden als de standaard voor (opgemaakte) tekst documenten. Een PDF/A is een op zichzelf staand document: alle lettertypen en afbeeldingen zijn in het bestand opgenomen, zodat het niet afhankelijk is van andere bestanden op de computer om de inhoud correct weer te geven. PDF/A kent een aantal subtypen. Het subtype PDF/A-1a stelt nadere eisen aan de tekst binnen het document en is aan te raden voor tekstdocumenten die volledig met de computer zijn gemaakt (‘born-digital’). Voor gedigitaliseerde documenten is het subtype PDF/A-1b meer geschikt. Op veel computers zal al software zijn geïnstalleerd waarmee PDF bestanden geopend kunnen worden, als dat niet het geval is kan de Adobe Reader gratis worden gedownload. Adobe-software voor het aanmaken van PDF-bestanden is niet gratis, maar diverse gratis softwarepakketten als OpenOffice en IrfanView bieden ook PDF- ondersteuning. Ook bestaan er print-programma’s waarmee documenten naar een PDF document kunnen worden ‘geprint’, bijvoorbeeld de gratis Bullzip PDF printer. Wanneer tekstdocumenten worden aangemaakt of geconverteerd van non-preferred formaten zoals Microsoft Word is PDF/A het voorkeursformaat voor de duurzaamheid en toegankelijkheid op de lange termijn. Een conversie van reguliere PDF naar PDF/A is echter onwenselijk. Als een origineel tekstdocument een reguliere PDF is zal een conversie naar PDF/A weinig meerwaarde bieden, daarnaast bestaat bij een dergelijke conversie zelfs de mogelijkheid van dataverlies. Daarom worden originele PDF documenten die géén PDF/A zijn ook geaccepteerd door DANS en als zodanig in het archief opgenomen. De toegankelijkheid en duurzaamheid van reguliere PDF documenten kan DANS echter niet garanderen. PDF/A is een preferred format binnen bestandstype Tekstdocumenten en een non-preferred format binnen bestandstype Spreadsheets."@nl ;
+      skos:member :textDocuments .
+
+
+:doc rdf:type skos:Concept  ;
+      skos:inScheme :nonPreferredFileFormats;
+      skos:member :textDocuments ;
+      dct:isReplacedBy  :PDFA, :ODT .
+
+
+:docx rdf:type skos:Concept ;
+      skos:inScheme :nonPreferredFileFormats;
+      skos:member :textDocuments ;
+      dct:isReplacedBy  :PDFA, :ODT .
+
+
+:pdf rdf:type skos:Concept ;
+      skos:inScheme :nonPreferredFileFormats;
+      skos:member :textDocuments ;
+      dct:isReplacedBy  :PDFA, :ODT .
+
+
+:rtf rdf:type skos:Concept ;
+      skos:inScheme :nonPreferredFileFormats;
+      skos:member :textDocuments ;
+      dct:isReplacedBy  :PDFA, :ODT .
+
+
