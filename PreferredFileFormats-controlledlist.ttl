@@ -1,4 +1,4 @@
-@prefix : <http://vocabularies.dans.knaw.nl/pff/> .
+@prefix dpff: <http://vocabularies.dans.knaw.nl/pff/> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -6,58 +6,91 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@base <http://vocabularies.dans.knaw.nl/pff/> .
+# @base <http://vocabularies.dans.knaw.nl/pff/> .
 
-<http://vocabularies.dans.knaw.nl/pff> rdf:type owl:Ontology ;
-                                        owl:versionIRI <http://vocabularies.dans.knaw.nl/pff/0.0.1> .
+#######################
+##### Concept Scheme ##
+#######################
 
-
-
-:preferredFileFormats rdf:type skos:ConceptScheme .
-
-
-:nonPreferredFileFormats rdf:type skos:ConceptScheme .
-
-
-
-:textDocuments rdf:type skos:Collection .
+<http://vocabularies.dans.knaw.nl/pff/> a skos:ConceptScheme ;
+      dct:title "DANS Preferred File Formats"@en ;
+	skos:prefLabel "DANS Preferred File Formats"@en ;
+	skos:definition "DANS Preferred File Formats (DPFF) is ..."@en ;
+	# dct:creator <http://ror.org/008pnp284> , <http://orcid.org/0000-0002-7839-3698> ;
+	# dct:created "2026-01-26"^^xsd:date ;
+	owl:versionInfo "0.1.0" . 
 
 
-:ODT rdf:type skos:Concept ;
-      skos:inScheme :preferredFileFormats;
-      skos:member :textDocuments .
+#######################
+#### Top Concepts #####
+#######################
+
+dpff:preferredFileFormats a skos:Concept ;
+	skos:prefLabel "Preferred File Formats"@en ;
+      skos:topConceptOf <http://vocabularies.dans.knaw.nl/pff/> ;
+      skos:inScheme <http://vocabularies.dans.knaw.nl/pff/> ;
+      skos:narrower dpff:ODT .
+
+dpff:nonPreferredFileFormats rdf:type skos:Concept ;
+	skos:prefLabel "Non-Preferred File Formats"@en ;
+      skos:topConceptOf <http://vocabularies.dans.knaw.nl/pff/> ;      
+      skos:inScheme <http://vocabularies.dans.knaw.nl/pff/> ;
+      skos:narrower dpff:PDFA .
+
+#######################
+##### Collections #####
+#######################
+dpff:textDocuments rdf:type skos:Collection ;
+      skos:prefLabel "Text Documents Collection"@en, "Verzameling tekstdocumenten"@nl ;
+      skos:member dpff:ODT, dpff:PDFA , dpff:doc, dpff:docx, dpff:pdf, dpff:rtf .
+
+dpff:plainText rdf:type skos:Collection ;
+      skos:prefLabel "Plain text Collection"@en, "Platte tekstverzameling"@nl .
+      # skos:member  .
 
 
-:PDFA rdf:type skos:Concept ;
-      skos:inScheme :preferredFileFormats;
-      skos:prefLabel "PDF/A (.pdf)" ;
-      skos:definition "PDF, the “Portable Document Format” developed by software giant Adobe, has the PDF/A subtype designed for long-term sustainability. PDF/A is internationally held as the standard for (formatted) text documents. A PDF/A is a stand-alone document: all fonts and images are included in the file, so that it does not depend on other files on the computer to display the content correctly. PDF/A has a number of subtypes. The PDF/A-1a subtype sets further requirements for the text within the document and is recommended for text documents made entirely with the computer (born-digital). The PDF/A-1b subtype is more suitable for digitized documents. Many computers will already have software installed with which PDF files can be opened, if not the Adobe Reader can be downloaded for free. Adobe software for creating PDF files is not free, but various free software packages such as OpenOffice and IrfanView also offer PDF support. There are also print programs with which documents can be “printed” to a PDF document, for example the free Bullzip PDF printer. When text documents are created or converted from non-preferred formats such as Microsoft Word, PDF/A is the preferred format for long-term durability and accessibility.
-However, a conversion from regular PDF to PDF/A is undesirable. If an original text document is a regular PDF, a conversion to PDF/A will offer little added value. In addition, such a conversion even offers the possibility of data loss. That is why original PDF documents that are not PDF/A are also accepted by DANS and included as such in the archive. However, DANS cannot guarantee the accessibility and durability of regular PDF documents. PDF/A is a preferred format for file type Text documents and non-preferred format for file type Spreadsheets."@en, 
-"PDF, het ‘Portable Document Format’ dat wordt ontwikkeld door softwaregigant Adobe, kent het subtype PDF/A dat is ontworpen voor duurzaamheid op de lange termijn. PDF/A wordt internationaal aangehouden als de standaard voor (opgemaakte) tekst documenten. Een PDF/A is een op zichzelf staand document: alle lettertypen en afbeeldingen zijn in het bestand opgenomen, zodat het niet afhankelijk is van andere bestanden op de computer om de inhoud correct weer te geven. PDF/A kent een aantal subtypen. Het subtype PDF/A-1a stelt nadere eisen aan de tekst binnen het document en is aan te raden voor tekstdocumenten die volledig met de computer zijn gemaakt (‘born-digital’). Voor gedigitaliseerde documenten is het subtype PDF/A-1b meer geschikt. Op veel computers zal al software zijn geïnstalleerd waarmee PDF bestanden geopend kunnen worden, als dat niet het geval is kan de Adobe Reader gratis worden gedownload. Adobe-software voor het aanmaken van PDF-bestanden is niet gratis, maar diverse gratis softwarepakketten als OpenOffice en IrfanView bieden ook PDF- ondersteuning. Ook bestaan er print-programma’s waarmee documenten naar een PDF document kunnen worden ‘geprint’, bijvoorbeeld de gratis Bullzip PDF printer. Wanneer tekstdocumenten worden aangemaakt of geconverteerd van non-preferred formaten zoals Microsoft Word is PDF/A het voorkeursformaat voor de duurzaamheid en toegankelijkheid op de lange termijn. Een conversie van reguliere PDF naar PDF/A is echter onwenselijk. Als een origineel tekstdocument een reguliere PDF is zal een conversie naar PDF/A weinig meerwaarde bieden, daarnaast bestaat bij een dergelijke conversie zelfs de mogelijkheid van dataverlies. Daarom worden originele PDF documenten die géén PDF/A zijn ook geaccepteerd door DANS en als zodanig in het archief opgenomen. De toegankelijkheid en duurzaamheid van reguliere PDF documenten kan DANS echter niet garanderen. PDF/A is een preferred format binnen bestandstype Tekstdocumenten en een non-preferred format binnen bestandstype Spreadsheets."@nl ;
-      skos:member :textDocuments .
+#######################
+##### Concepts ########
+#######################
+
+dpff:ODT rdf:type skos:Concept ;
+      skos:prefLabel "ODP"@en,"ODP"@nl  ;
+      skos:definition """The OpenDocument format for file formats has been developed by the Organization for the Advancement of Structured Information Standards (OASIS) as XML-based open standards for storing and exchanging various types of data. OpenDocument was incorporated as an official ISO standard on 11 November 2006. This standard is further elaborated in OpenDocument 1.1 (1 February 2007) and OpenDocument 1.2 (29 September 2011). The file formats are in fact ZIP compression files within which XML files and any additions such as images have been collected. The free Apache OpenOffice software uses OpenDocument formats as standard formats. Outside of this package, OpenDocuments enjoy good support. Microsoft Office has supported OpenOffice formats since version 2007, although problems may occur with specific properties of the OpenDocuments. In many countries, including the Netherlands, the use of open source software and OpenDocuments has been set as standard for making government documentation accessible. OpenDocument formats are suitable for archiving, accessibility and reusability in the long term. The OpenDocument format for text documents is OpenDocument Text (.odt). ODT is a preferred format under the Text documents file type."""@en, 
+"""De OpenDocument indeling voor bestandsformaten is ontwikkeld door de Organization for the Advancement of Structured Information Standards (OASIS) als op XML gebaseerde open standaarden voor het bewaren en uitwisselen van diverse typen data. Op 11 november 2006 is OpenDocument opgenomen als een officiële ISO-standaard. Deze standaard is nader uitgewerkt in OpenDocument 1.1 (1 februari 2007) en OpenDocument 1.2 (29 september 2011). De bestandsformaten zijn in feite ZIP compressiebestanden waarbinnen XML-bestanden en eventuele toevoegingen zoals afbeeldingen zijn verzameld. De gratis software Apache OpenOffice gebruikt OpenDocument formaten als standaardformaten. Buiten dit pakket genieten OpenDocuments goede ondersteuning. Microsoft Office ondersteunt OpenOffice formaten sinds versie 2007, al kunnen problemen optreden met specifieke eigenschappen van de OpenDocuments. In veel landen, waaronder Nederland, is het gebruik van open source software en OpenDocuments als standaard bepaald voor het toegankelijk maken van overheidsdocumentatie. OpenDocument formaten zijn geschikt voor archivering, toegankelijkheid en herbruikbaarheid op de lange termijn. Het OpenDocument formaat voor tekstdocumenten is OpenDocument Tekst (.odt). ODT is een preferred format onder bestandstype Tekstdocumenten."""@nl ;
+      skos:broader dpff:preferredFileFormats ;
+      skos:inScheme <http://vocabularies.dans.knaw.nl/pff/> .
+      
+dpff:PDFA rdf:type skos:Concept ;
+      skos:prefLabel "PDF/A (.pdf)"@en, "PDF/A (.pdf)"@nl;
+      skos:definition """PDF, the “Portable Document Format” developed by software giant Adobe, has the PDF/A subtype designed for long-term sustainability. PDF/A is internationally held as the standard for (formatted) text documents. A PDF/A is a stand-alone document: all fonts and images are included in the file, so that it does not depend on other files on the computer to display the content correctly. PDF/A has a number of subtypes. The PDF/A-1a subtype sets further requirements for the text within the document and is recommended for text documents made entirely with the computer (born-digital). The PDF/A-1b subtype is more suitable for digitized documents. Many computers will already have software installed with which PDF files can be opened, if not the Adobe Reader can be downloaded for free. Adobe software for creating PDF files is not free, but various free software packages such as OpenOffice and IrfanView also offer PDF support. There are also print programs with which documents can be “printed” to a PDF document, for example the free Bullzip PDF printer. When text documents are created or converted from non-preferred formats such as Microsoft Word, PDF/A is the preferred format for long-term durability and accessibility. However, a conversion from regular PDF to PDF/A is undesirable. If an original text document is a regular PDF, a conversion to PDF/A will offer little added value. In addition, such a conversion even offers the possibility of data loss. That is why original PDF documents that are not PDF/A are also accepted by DANS and included as such in the archive. However, DANS cannot guarantee the accessibility and durability of regular PDF documents. PDF/A is a preferred format for file type Text documents and non-preferred format for file type Spreadsheets."""@en, 
+      """PDF, het ‘Portable Document Format’ dat wordt ontwikkeld door softwaregigant Adobe, kent het subtype PDF/A dat is ontworpen voor duurzaamheid op de lange termijn. PDF/A wordt internationaal aangehouden als de standaard voor (opgemaakte) tekst documenten. Een PDF/A is een op zichzelf staand document: alle lettertypen en afbeeldingen zijn in het bestand opgenomen, zodat het niet afhankelijk is van andere bestanden op de computer om de inhoud correct weer te geven. PDF/A kent een aantal subtypen. Het subtype PDF/A-1a stelt nadere eisen aan de tekst binnen het document en is aan te raden voor tekstdocumenten die volledig met de computer zijn gemaakt (‘born-digital’). Voor gedigitaliseerde documenten is het subtype PDF/A-1b meer geschikt. Op veel computers zal al software zijn geïnstalleerd waarmee PDF bestanden geopend kunnen worden, als dat niet het geval is kan de Adobe Reader gratis worden gedownload. Adobe-software voor het aanmaken van PDF-bestanden is niet gratis, maar diverse gratis softwarepakketten als OpenOffice en IrfanView bieden ook PDF- ondersteuning. Ook bestaan er print-programma’s waarmee documenten naar een PDF document kunnen worden ‘geprint’, bijvoorbeeld de gratis Bullzip PDF printer. Wanneer tekstdocumenten worden aangemaakt of geconverteerd van non-preferred formaten zoals Microsoft Word is PDF/A het voorkeursformaat voor de duurzaamheid en toegankelijkheid op de lange termijn. Een conversie van reguliere PDF naar PDF/A is echter onwenselijk. Als een origineel tekstdocument een reguliere PDF is zal een conversie naar PDF/A weinig meerwaarde bieden, daarnaast bestaat bij een dergelijke conversie zelfs de mogelijkheid van dataverlies. Daarom worden originele PDF documenten die géén PDF/A zijn ook geaccepteerd door DANS en als zodanig in het archief opgenomen. De toegankelijkheid en duurzaamheid van reguliere PDF documenten kan DANS echter niet garanderen. PDF/A is een preferred format binnen bestandstype Tekstdocumenten en een non-preferred format binnen bestandstype Spreadsheets."""@nl ;
+      skos:broader dpff:preferredFileFormats ;
+      skos:inScheme <http://vocabularies.dans.knaw.nl/pff/> .
+
+dpff:doc rdf:type skos:Concept  ;
+      skos:prefLabel "doc"@en, "doc"@nl;
+      skos:definition """DOC and DOCX are standard file formats of the widely used Microsoft application Word. The binary DOC is the original file format of this software and was directly developed by Microsoft. Office Open XML DOCX has been the successor of DOC since Word 2007. This is a completely different file format. In fact, it is a ZIP compression file that contains XML files and any additions such as images. The development of DOCX has a rich history. Three implementations of the format have emerged: the now outdated versions ‘ECMA’ and‚ ‘Transitional’ and the current open standard ‘Strict’. Older versions of Word are not able to store DOCX in “Strict”, for a long time transition format “Transitional” has seen more use and this implementation still occurs. This can lead to problems with the format support. In addition, use can be made of internal Microsoft standards that are not public. For these reasons, DOCX is provisionally seen as a non-preferred file format. Microsoft Word (.doc) and Office Open XML (.docx) are non-preferred formats for file type Text documents."""@en, 
+"""DOC en DOCX zijn standaard bestandsformaten van de veelgebruikte Microsoft applicatie Word. Het binaire DOC is het oorspronkelijke bestandsformaat van deze software en viel onder het directe beheer van Microsoft. Office Open XML DOCX geldt sinds Word 2007 als de opvolger van DOC. Dit is een geheel ander bestandsformaat. In feite gaat het om een ZIP compressiebestand waarbinnen XML-bestanden en eventuele toevoegingen zoals afbeeldingen zijn verzameld. De ontwikkeling van DOCX kent een rijke geschiedenis. Er zijn drie implementaties van het formaat ontstaan: de inmiddels verouderde versies ‘ECMA’ en ‘Transitional’ en de actuele open standaard ‘Strict’. Oudere versies van Word zijn niet in staat om DOCX in ‘Strict’ op te slaan, het gebruik van overgangsformaat ‘Transitional’ is lange tijd groter geweest en komt nog voor. Dit kan leiden tot problemen met de ondersteuning van het formaat. Daarnaast kan gebruik worden gemaakt van interne Microsoft-standaarden die niet openbaar zijn. Om deze redenen wordt DOCX voorlopig gezien als een non-preferred bestandsformaat. Microsoft Word (.doc) en Office Open XML (.docx) zijn non-preferred formats binnen bestandstype Tekstdocumenten."""@nl ;
+      skos:broader dpff:nonPreferredFileFormats ;
+      skos:inScheme <http://vocabularies.dans.knaw.nl/pff/> ;
+      dct:isReplacedBy dpff:PDFA, dpff:ODT .
 
 
-:doc rdf:type skos:Concept  ;
-      skos:inScheme :nonPreferredFileFormats;
-      skos:member :textDocuments ;
-      dct:isReplacedBy  :PDFA, :ODT .
+dpff:docx rdf:type skos:Concept ;
+      skos:prefLabel "docx"@en,"docx"@nl ;
+      skos:definition "foo"@en, "bar"@nl ;
+      skos:broader dpff:nonPreferredFileFormats ;
+      skos:inScheme <http://vocabularies.dans.knaw.nl/pff/> ;
+      dct:isReplacedBy dpff:PDFA, dpff:ODT ;
+      skos:exactMatch dpff:doc .
 
+# dpff:pdf rdf:type skos:Concept ;
+#       skos:inScheme dpff:nonPreferredFileFormats ;
+#       skos:prefLabel "pdf" ;
+#       dct:isReplacedBy dpff:PDFA ,dpff:ODT .
 
-:docx rdf:type skos:Concept ;
-      skos:inScheme :nonPreferredFileFormats;
-      skos:member :textDocuments ;
-      dct:isReplacedBy  :PDFA, :ODT .
-
-
-:pdf rdf:type skos:Concept ;
-      skos:inScheme :nonPreferredFileFormats;
-      skos:member :textDocuments ;
-      dct:isReplacedBy  :PDFA, :ODT .
-
-
-:rtf rdf:type skos:Concept ;
-      skos:inScheme :nonPreferredFileFormats;
-      skos:member :textDocuments ;
-      dct:isReplacedBy  :PDFA, :ODT .
-
+# dpff:rtf rdf:type skos:Concept ;
+#       skos:inScheme dpff:nonPreferredFileFormats ;
+#       skos:prefLabel "rtf" ;
+#       dct:isReplacedBy dpff:PDFA , dpff:ODT .
 
