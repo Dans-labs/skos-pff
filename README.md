@@ -1,8 +1,6 @@
-# DANS Preferred File Formats - SKOS Artifacts
+# DANS Preferred File Formats as a SKOS Artifact
 
-DANS maintains a list of preferred file formats (PFF) in https://dans.knaw.nl/nl/bestandsformaten/
-
-This repository attempts to encode the information contained in PFF in a SKOS taxonomy.
+DANS maintains a list of preferred file formats (PFF) in https://dans.knaw.nl/nl/bestandsformaten/ This repository attempts to encode the information contained in PFF in a SKOS taxonomy.
 
 Similar effort was made in DARIAH project. See https://github.com/ekoi/DANS-File-Formats/blob/additional-formats/dans-file-formats.json
 
@@ -53,7 +51,7 @@ changes:
     * 
 -->
 
-## SKOS taxonomy structure
+## PFF SKOS artifact Structure
 
 <!-- TODO -->
 
