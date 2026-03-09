@@ -55,4 +55,10 @@ changes:
 
 <!-- TODO -->
 
-## SKOSMOS 
+## SKOSMOS
+
+![Concept Scheme](imgs/DPFF-Skosmos03.png)
+
+![a Preferred File Format](imgs/DPFF-Skosmos02.png)
+
+![a Non-Preferred File Format](imgs/DPFF-Skosmos04.png)
