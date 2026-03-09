@@ -51,9 +51,15 @@ changes:
     * 
 -->
 
-## PFF SKOS artifact Structure
+## DPFF SKOS artifact Structure
 
 <!-- TODO -->
+
+## Possible future connections with other registries
+
+* NDE Guide to Prefered Formats https://www.wegwijzervoorkeursformaten.nl/index.php/Doorzoek_Register_op_toepassingsgebied
+* IANA Media Types http://www.iana.org/assignments/media-types/media-types.xhtml (DCAT-AP recommendation for domain DCAT:Distribution dcat:mediaType)
+* EU Vocabularies File Type Named Authority List http://publications.europa.eu/resource/authority/file-type (DCAT-AP dct:format domain DCAT:Distribution, DCAT:DataService)
 
 ## SKOSMOS
 
