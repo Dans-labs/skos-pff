@@ -8,7 +8,7 @@ void:uriSpace "http://vocabularies.dans.knaw.nl/DPFF/";
 skosmos:language "en", "nl";
 skosmos:defaultLanguage "en";
 skosmos:showTopConcepts true ;
-skosmos:fullAlphabeticalIndex true ;
+skosmos:fullAlphabeticalIndex false ;
 skosmos:groupClass skos:Collection ;
 void:sparqlEndpoint <http://fuseki-cache:80/skosmos/sparql> ; 
 skosmos:sparqlGraph <http://vocabularies.dans.knaw.nl/DPFF/> .'

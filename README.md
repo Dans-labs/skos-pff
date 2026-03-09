@@ -11,7 +11,26 @@ Similar effort was made in DARIAH project. See https://github.com/ekoi/DANS-File
 ### skomos git submodule
 
 * `git submodule add https://github.com/NatLibFi/Skosmos.git`
-* `sh skosmos-load-pff.sh`
+* append the Skosmos configuration (below) to `Skosmos/dockerfiles/config/config-docker-compose.ttl`
+* Start skomos+fuseki docker containers and load voc with `sh skosmos-load-pff.sh`
+* Browse DPFF in Skosmos: http://localhost:9090/DPFF
+
+DPFF Skosmos config 
+
+```
+:DPFF a skosmos:Vocabulary, void:Dataset ;
+dc:title "DANS Preferred File Formats"@en ;
+skosmos:shortName "DPFF";
+dc:subject :cat_general ;
+void:uriSpace "http://vocabularies.dans.knaw.nl/DPFF/";
+skosmos:language "en", "nl";
+skosmos:defaultLanguage "en";
+skosmos:showTopConcepts true ;
+skosmos:fullAlphabeticalIndex false ;
+skosmos:groupClass skos:Collection ;
+void:sparqlEndpoint <http://fuseki-cache:80/skosmos/sparql> ; 
+skosmos:sparqlGraph <http://vocabularies.dans.knaw.nl/DPFF/> .
+```
 
 ### python venv & requirements
 
@@ -23,6 +42,7 @@ Similar effort was made in DARIAH project. See https://github.com/ekoi/DANS-File
 ## Data source
 [Hierarchy-Preferred-Formats.csv](Hierarchy-Preferred-Formats.csv) is based on the list of PFFs maintained by DANS in Google doc [R.0.2 Curated Support Documentation](https://docs.google.com/spreadsheets/d/1hJtnGgO0FWQj4fMjhSIqtmW2lBt1_lI4fMlkgugHMXQ/edit?usp=sharing) 
 
+<!-- 
 changes:
 
 * `isPreferred` column was added, with values: `PreferredFileFormats` and `nonPreferredFileFormats`
@@ -31,33 +51,10 @@ changes:
     * "Document Hierarchy" -> "Collection"
     * "Fileformat" -> "Concept"
     * 
+-->
 
 ## SKOS taxonomy structure
 
 <!-- TODO -->
 
-[PreferredFileFormats-controlledlist.ttl](PreferredFileFormats-controlledlist.ttl) is structured around 2 `skos:ConceptScheme`: 
-* `:preferredFileFormats`
-* `:nonPreferredFileFormats`.
-
-File format grouping are defined by instances of `skos:Collection`, ie. `:textDocuments rdf:type skos:Collection`
-
-Each file format is a concept, that is either in `:preferredFileFormats` or `:nonPreferredFileFormats` `skos:ConceptScheme` and is `skos:member` of one or more `skos:Collections`. 
-In the case of `:nonPreferredFileFormats` formats, the property `dct:isReplaceBy` to indicate the alternative, preferred file formats.
-
-
-Example:
-
-```ttl
-:ODT rdf:type skos:Concept ;
-      skos:inScheme :preferredFileFormats;
-      skos:member :textDocuments .
-
-
-:doc rdf:type skos:Concept  ;
-      skos:inScheme :nonPreferredFileFormats;
-      skos:member :textDocuments ;
-      dct:isReplacedBy  :PDFA, :ODT .
-
-```
-
+## SKOSMOS 
