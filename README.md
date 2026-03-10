@@ -4,7 +4,47 @@ DANS maintains a list of preferred file formats (PFF) in https://dans.knaw.nl/nl
 
 Similar effort was made in DARIAH project. See https://github.com/ekoi/DANS-File-Formats/blob/additional-formats/dans-file-formats.json
 
-## Requirements
+## DANS PFF Data 
+
+[pff-skos.ttl](pff-skos.ttl) [PROTOTYPE]- contains the DANS PFF data in Skos (turtle RDF)  
+
+## DANS PFF Data Model
+
+`# TODO` 
+
+## DANS PDF Data source
+[Hierarchy-Preferred-Formats.csv](Hierarchy-Preferred-Formats.csv) is based on the list of PFFs maintained by DANS in Google doc [R.0.2 Curated Support Documentation](https://docs.google.com/spreadsheets/d/1hJtnGgO0FWQj4fMjhSIqtmW2lBt1_lI4fMlkgugHMXQ/edit?usp=sharing) 
+
+<!-- 
+changes:
+
+* `isPreferred` column was added, with values: `PreferredFileFormats` and `nonPreferredFileFormats`
+* rows addressing more than one format were split into several rows
+* renamed: 
+    * "Document Hierarchy" -> "Collection"
+    * "Fileformat" -> "Concept"
+    * 
+-->
+
+
+## Possible future connections with other registries
+
+* NDE Guide to Prefered Formats https://www.wegwijzervoorkeursformaten.nl/index.php/Doorzoek_Register_op_toepassingsgebied
+* IANA Media Types http://www.iana.org/assignments/media-types/media-types.xhtml (DCAT-AP recommendation for domain DCAT:Distribution dcat:mediaType)
+* EU Vocabularies File Type Named Authority List http://publications.europa.eu/resource/authority/file-type (DCAT-AP dct:format domain DCAT:Distribution, DCAT:DataService)
+
+## DANS PFF in Skosmos
+
+![Concept Scheme](imgs/DPFF-Skosmos03.png)
+
+![a Preferred File Format](imgs/DPFF-Skosmos02.png)
+
+![a Non-Preferred File Format](imgs/DPFF-Skosmos04.png)
+
+
+# Development
+
+## Development Requirements
 
 ### skomos git submodule
 
@@ -13,7 +53,7 @@ Similar effort was made in DARIAH project. See https://github.com/ekoi/DANS-File
 * Start skomos+fuseki docker containers and load voc with `sh skosmos-load-pff.sh`
 * Browse DPFF in Skosmos: http://localhost:9090/DPFF
 
-DPFF Skosmos config 
+DPFF Skosmos config
 
 ```
 :DPFF a skosmos:Vocabulary, void:Dataset ;
@@ -37,34 +77,3 @@ skosmos:sparqlGraph <http://vocabularies.dans.knaw.nl/DPFF/> .
 * install the sparqlkernel into jupyter `jupyter sparqlkernel install --user`
 
 
-## Data source
-[Hierarchy-Preferred-Formats.csv](Hierarchy-Preferred-Formats.csv) is based on the list of PFFs maintained by DANS in Google doc [R.0.2 Curated Support Documentation](https://docs.google.com/spreadsheets/d/1hJtnGgO0FWQj4fMjhSIqtmW2lBt1_lI4fMlkgugHMXQ/edit?usp=sharing) 
-
-<!-- 
-changes:
-
-* `isPreferred` column was added, with values: `PreferredFileFormats` and `nonPreferredFileFormats`
-* rows addressing more than one format were split into several rows
-* renamed: 
-    * "Document Hierarchy" -> "Collection"
-    * "Fileformat" -> "Concept"
-    * 
--->
-
-## DPFF SKOS artifact Structure
-
-<!-- TODO -->
-
-## Possible future connections with other registries
-
-* NDE Guide to Prefered Formats https://www.wegwijzervoorkeursformaten.nl/index.php/Doorzoek_Register_op_toepassingsgebied
-* IANA Media Types http://www.iana.org/assignments/media-types/media-types.xhtml (DCAT-AP recommendation for domain DCAT:Distribution dcat:mediaType)
-* EU Vocabularies File Type Named Authority List http://publications.europa.eu/resource/authority/file-type (DCAT-AP dct:format domain DCAT:Distribution, DCAT:DataService)
-
-## SKOSMOS
-
-![Concept Scheme](imgs/DPFF-Skosmos03.png)
-
-![a Preferred File Format](imgs/DPFF-Skosmos02.png)
-
-![a Non-Preferred File Format](imgs/DPFF-Skosmos04.png)
