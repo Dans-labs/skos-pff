@@ -16,6 +16,32 @@ Define using LinkML in [pff-schema.yaml](pff-schema.yaml)
 
 generated via `linkml generate graphviz -f png -o imgs/pff-schema pff-schema.yaml`
 
+### Data Model Summary table
+
+generated with `linkml generate summary pff-schema.yaml | pandoc -f tsv -t gfm`
+
+
+| Class Name        | Parent Class | YAML Class Name   | Description                                         | Flags | Slot Name    | YAML Slot Name | Range             | Card  | Slot Description | URI                |
+|-------------------|--------------|-------------------|-----------------------------------------------------|-------|--------------|----------------|-------------------|-------|------------------|--------------------|
+| SKOSCollection    |              | SKOSCollection    | SKOS Collection grouping Concepts                   |       |              |                |                   |       |                  |                    |
+|                   |              |                   |                                                     |       | prefLabel    |                | str               | 0..\* |                  | skos:prefLabel     |
+|                   |              |                   |                                                     |       | member       |                | SKOSConcept       | 0..\* |                  | skos:member        |
+| SKOSConcept       |              | SKOSConcept       | SKOS Concept representing a file format             |       |              |                |                   |       |                  |                    |
+|                   |              |                   |                                                     |       | prefLabel    |                | str               | 0..\* |                  | skos:prefLabel     |
+|                   |              |                   |                                                     |       | definition   |                | str               | 0..\* |                  | skos:definition    |
+|                   |              |                   |                                                     |       | broader      |                | SKOSConcept       | 0..1  |                  | skos:broader       |
+|                   |              |                   |                                                     |       | narrower     |                | SKOSConcept       | 0..\* |                  | skos:narrower      |
+|                   |              |                   |                                                     |       | inScheme     |                | SKOSConceptScheme | 0..1  |                  | skos:inScheme      |
+|                   |              |                   |                                                     |       | isReplacedBy |                | SKOSConcept       | 0..\* |                  | dct:isReplacedBy   |
+|                   |              |                   |                                                     |       | exactMatch   |                | SKOSConcept       | 0..1  |                  | skos:exactMatch    |
+| SKOSConceptScheme |              | SKOSConceptScheme | SKOS Concept Scheme for DANS Preferred File Formats |       |              |                |                   |       |                  |                    |
+|                   |              |                   |                                                     |       | title        |                | str               | 0..1  |                  | dct:title          |
+|                   |              |                   |                                                     |       | prefLabel    |                | str               | 0..\* |                  | skos:prefLabel     |
+|                   |              |                   |                                                     |       | definition   |                | str               | 0..\* |                  | skos:definition    |
+|                   |              |                   |                                                     |       | versionInfo  |                | str               | 0..1  |                  | owl:versionInfo    |
+|                   |              |                   |                                                     |       | topConcepts  |                | SKOSConcept       | 0..\* |                  | skos:hasTopConcept |
+
+
 ## DANS PDF Data source
 [Hierarchy-Preferred-Formats.csv](Hierarchy-Preferred-Formats.csv) is based on the list of PFFs maintained by DANS in Google doc [R.0.2 Curated Support Documentation](https://docs.google.com/spreadsheets/d/1hJtnGgO0FWQj4fMjhSIqtmW2lBt1_lI4fMlkgugHMXQ/edit?usp=sharing) 
 
