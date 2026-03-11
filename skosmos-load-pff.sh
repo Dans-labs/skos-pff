@@ -27,7 +27,7 @@ curl -X POST   --data-urlencode 'update=DELETE { GRAPH <http://vocabularies.dans
 sleep 1
 cd ..
 # Load aatc.ttl to Fuseki on graph http://vocabularies.dans.knaw.nl/DPFF/
-curl -X POST -H "Content-Type: text/turtle" -T PreferredFileFormats-controlledlist.ttl "http://localhost:9030/skosmos/data?graph=http://vocabularies.dans.knaw.nl/DPFF/"
+curl -X POST -H "Content-Type: text/turtle" -T pff-skos.ttl "http://localhost:9030/skosmos/data?graph=http://vocabularies.dans.knaw.nl/DPFF/"
 
 echo "DPFF in Skosmos: http://localhost:9090/DPFF"
 

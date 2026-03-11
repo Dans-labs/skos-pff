@@ -1,3 +1,4 @@
-catalog-*.xml
 venv/
-.~*
+.vscode/
+catalog-v001.xml
+ISSUES.md
