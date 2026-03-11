@@ -4,13 +4,17 @@ DANS maintains a list of preferred file formats (PFF) in https://dans.knaw.nl/nl
 
 Similar effort was made in DARIAH project. See https://github.com/ekoi/DANS-File-Formats/blob/additional-formats/dans-file-formats.json
 
-## DANS PFF Data 
+## DANS PFF Data
 
 [pff-skos.ttl](pff-skos.ttl) [PROTOTYPE]- contains the DANS PFF data in Skos (turtle RDF)  
 
 ## DANS PFF Data Model
 
-`# TODO` 
+Define using LinkML in [pff-schema.yaml](pff-schema.yaml)
+
+![PFF schema in GraphViz](imgs/pff-schema.png) 
+
+generated via `linkml generate graphviz -f png -o imgs/pff-schema pff-schema.yaml`
 
 ## DANS PDF Data source
 [Hierarchy-Preferred-Formats.csv](Hierarchy-Preferred-Formats.csv) is based on the list of PFFs maintained by DANS in Google doc [R.0.2 Curated Support Documentation](https://docs.google.com/spreadsheets/d/1hJtnGgO0FWQj4fMjhSIqtmW2lBt1_lI4fMlkgugHMXQ/edit?usp=sharing) 

@@ -1,5 +1,7 @@
-schema_title: DANS Preferred File Formats SKOS LinkML Schema
-schema_description: Formalization of DANS Preferred File Formats as Linked Data taxonomy using LinkML, reflecting SKOS structure.
+name: DANS-PFF
+title: DANS Preferred File Formats SKOS LinkML Schema
+description: |-
+  Formalization of DANS Preferred File Formats as Linked Data taxonomy using LinkML, reflecting SKOS structure.
 id: "http://vocabularies.dans.knaw.nl/pff/linkml-schema"
 prefixes:
   dpff: "http://vocabularies.dans.knaw.nl/pff/"
@@ -93,40 +95,3 @@ slots:
     slot_uri: skos:exactMatch
     range: SKOSConcept
 
-# Example instance types (for illustration, not required in schema)
-# You can define dpff:preferredFileFormats, dpff:ODT, etc. as instances of SKOSConcept or subclass for domain entities.
-
-# Subclasses for Preferred/Non-Preferred, etc. (optional for clarity)
-  PreferredFileFormat:
-    is_a: SKOSConcept
-    class_uri: dpff:preferredFileFormats
-
-  NonPreferredFileFormat:
-    is_a: SKOSConcept
-    class_uri: dpff:nonPreferredFileFormats
-
-  ODT:
-    is_a: SKOSConcept
-    class_uri: dpff:ODT
-
-  PDFA:
-    is_a: SKOSConcept
-    class_uri: dpff:PDFA
-
-  Doc:
-    is_a: SKOSConcept
-    class_uri: dpff:doc
-
-  Docx:
-    is_a: SKOSConcept
-    class_uri: dpff:docx
-
-  TextDocumentsCollection:
-    is_a: SKOSCollection
-    class_uri: dpff:textDocuments
-
-  PlainTextCollection:
-    is_a: SKOSCollection
-    class_uri: dpff:plainText
-
-# To add instance data, use YAML or JSON-LD with the schema.
