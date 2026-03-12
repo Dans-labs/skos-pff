@@ -33,7 +33,7 @@ pff_graph = Graph()
 ns_str = 'http://vocabularies.dans.knaw.nl/pff/'
 namespace = Namespace(ns_str)
 
-for row in parse_csv_line_by_line('Hierarchy-Preferred-Formats.csv'):
+for row in parse_csv_line_by_line('src_pff.csv'):
     if row['isPreferred']:  # tmp - while spreadsheet is not complete
 
         # row['Concept'] - SKOS.Concept

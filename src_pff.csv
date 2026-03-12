@@ -1,5 +1,4 @@
-Collection,Concept,isPreferred,URI ending,Stable URL English,Stable Nederlands URL
-Text documents,PDF/A (.pdf),preferredFileFormats,text-documents_pdf-a_,https://dans.knaw.nl/en/file-formats/text-documents/pdf-a/,https://dans.knaw.nl/bestandsformaten/tekstdocumenten/pdf-a/
+collection,concept,isPreferred,uri_ending,stable_URL_EN,Stable_URL_NLText documents,PDF/A (.pdf),preferredFileFormats,text-documents_pdf-a_,https://dans.knaw.nl/en/file-formats/text-documents/pdf-a/,https://dans.knaw.nl/bestandsformaten/tekstdocumenten/pdf-a/
 Text documents,ODT (.odt),preferredFileFormats,text-documents_opendocument-text_,https://dans.knaw.nl/en/file-formats/text-documents/opendocument-text/,https://dans.knaw.nl/bestandsformaten/tekstdocumenten/opendocument-text-odt/
 Text documents,Microsoft Word (.doc),nonPreferredFileFormats,text-documents_microsoft-word-and-office-open-xml_,https://dans.knaw.nl/en/file-formats/text-documents/microsoft-word-and-office-open-xml/,https://dans.knaw.nl/bestandsformaten/tekstdocumenten/microsoft-word-doc-en-office-open-xml-docx/
 Text documents,Office Open XML (.docx),nonPreferredFileFormats,text-documents_microsoft-word-and-office-open-xml_,https://dans.knaw.nl/en/file-formats/text-documents/microsoft-word-and-office-open-xml/,https://dans.knaw.nl/bestandsformaten/tekstdocumenten/microsoft-word-doc-en-office-open-xml-docx/

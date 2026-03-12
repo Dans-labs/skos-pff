@@ -10,15 +10,15 @@ Similar effort was made in DARIAH project. See https://github.com/ekoi/DANS-File
 
 ## DANS PFF Data Model
 
-Define using LinkML in [pff-schema.yaml](pff-schema.yaml)
+Define using LinkML in [schemas/pff.linkml.yaml](schemas/pff.linkml.yaml)
 
 ![PFF schema in GraphViz](imgs/pff-schema.png) 
 
-generated via `linkml generate graphviz -f png -o imgs/pff-schema pff-schema.yaml`
+generated via `linkml generate graphviz -f png -o imgs/pff-schema schemas/pff.linkml.yaml`
 
 ### Data Model Summary table
 
-generated with `linkml generate summary pff-schema.yaml | pandoc -f tsv -t gfm`
+generated with `linkml generate summary schemas/pff.linkml.yaml | pandoc -f tsv -t gfm`
 
 
 | Class Name        | Parent Class | YAML Class Name   | Description                                         | Flags | Slot Name    | YAML Slot Name | Range             | Card  | Slot Description | URI                |
@@ -43,7 +43,7 @@ generated with `linkml generate summary pff-schema.yaml | pandoc -f tsv -t gfm`
 
 
 ## DANS PDF Data source
-[Hierarchy-Preferred-Formats.csv](Hierarchy-Preferred-Formats.csv) is based on the list of PFFs maintained by DANS in Google doc [R.0.2 Curated Support Documentation](https://docs.google.com/spreadsheets/d/1hJtnGgO0FWQj4fMjhSIqtmW2lBt1_lI4fMlkgugHMXQ/edit?usp=sharing) 
+[src_pff.csv](src_pff.csv) is based on the list of PFFs maintained by DANS in Google doc [R.0.2 Curated Support Documentation](https://docs.google.com/spreadsheets/d/1hJtnGgO0FWQj4fMjhSIqtmW2lBt1_lI4fMlkgugHMXQ/edit?usp=sharing) 
 
 <!-- 
 changes:
@@ -55,6 +55,11 @@ changes:
     * "Fileformat" -> "Concept"
     * 
 -->
+### DANS PDF Data source Schema
+
+[schemas/src_pff.linkml.yaml](schemas/src_pff.linkml.yaml)
+
+linkml-convert --schema schemas/src_pff.linkml.yaml   -t json src_pff-sample.csv
 
 
 ## Possible future connections with other registries

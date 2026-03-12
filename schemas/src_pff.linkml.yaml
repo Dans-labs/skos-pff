@@ -1,0 +1,66 @@
+name: DANS-PFF-spreadsheet
+description:  |
+  Document Hierarchy-Preferred Formats spresheet
+  source CSV: src_pff.csv
+  source Google docs https://docs.google.com/spreadsheets/d/1hJtnGgO0FWQj4fMjhSIqtmW2lBt1_lI4fMlkgugHMXQ/edit?usp=sharing
+id: http://vocabularies.dans.knaw.nl/pff/linkml-schema
+imports:
+- linkml:types
+prefixes:
+  linkml: https://w3id.org/linkml/
+  dpff: http://vocabularies.dans.knaw.nl/pff/linkml-schema
+default_prefix: dpff
+types:
+  https identifier:
+    typeof: string
+
+classes:
+
+
+  FileFormatCollection:
+    description: >-
+      DANS preferred file formats collection
+    slots:
+      - row
+    tree_root: true
+
+
+  Row:
+    description: A row describing a file format, its hierarchy, and metadata.
+    slots:
+      - collection
+      - concept
+      - isPreferred
+      - uri_ending
+      - stable_URL_EN
+      - stable_URL_NL
+
+slots:
+  collection:
+    description: The overall document category or grouping.
+    range: string
+  concept:
+    description:  file format (e.g. PDF/A (.pdf)).
+    range: string
+  isPreferred:
+    description: The person responsible for this entry.
+    range: PreferredFileFormatsVals
+
+
+
+  uri_ending:
+    range: string
+  stable_URL_EN:
+    range: uri  
+  stable_URL_NL:    
+    range: uri
+  row:
+    range: Row
+    multivalued: true
+    inlined: true  
+
+enums:
+  PreferredFileFormatsVals:
+    permissible_values:
+      preferredFileFormats:
+      nonPreferredFileFormats: 

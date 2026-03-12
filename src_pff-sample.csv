@@ -1,0 +1,3 @@
+collection,concept,isPreferred,uri_ending,stable_URL_EN,stable_URL_NL
+Text documents,PDF/A (.pdf),preferredFileFormats,text-documents_pdf-a_,https://dans.knaw.nl/en/file-formats/text-documents/pdf-a/,https://dans.knaw.nl/bestandsformaten/tekstdocumenten/pdf-a/
+Text documents,ODT (.odt),preferredFileFormats,text-documents_opendocument-text_,https://dans.knaw.nl/en/file-formats/text-documents/opendocument-text/,https://dans.knaw.nl/bestandsformaten/tekstdocumenten/opendocument-text-odt/
