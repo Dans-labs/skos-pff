@@ -1,3 +1,4 @@
 rdflib
 schema-automator==0.5.4rc2
 linkml
+linkml-map
