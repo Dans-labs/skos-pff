@@ -104,6 +104,6 @@ skosmos:sparqlGraph <http://vocabularies.dans.knaw.nl/DPFF/> .
 
 * Activate you python virtual environment
 * install requirements: `pip install -r requirements.txt`
-* install the sparqlkernel into jupyter `jupyter sparqlkernel install --user`
+<!-- * install the sparqlkernel into jupyter `jupyter sparqlkernel install --user` -->
 
 
