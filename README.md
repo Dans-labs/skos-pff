@@ -1,6 +1,8 @@
 # DANS Preferred File Formats as a SKOS Artifact
 
-DANS maintains a list of preferred file formats (PFF) in https://dans.knaw.nl/nl/bestandsformaten/ This repository attempts to encode the information contained in PFF in a SKOS taxonomy.
+DANS maintains a list of preferred file formats (PFF) in https://dans.knaw.nl/nl/bestandsformaten/ 
+
+This repository attempts to encode the information contained in PFF in a SKOS taxonomy.
 
 Similar effort was made in DARIAH project. See https://github.com/ekoi/DANS-File-Formats/blob/additional-formats/dans-file-formats.json
 
@@ -42,7 +44,7 @@ generated with `linkml generate summary schemas/pff.linkml.yaml | pandoc -f tsv 
 |                   |              |                   |                                                     |       | topConcepts  |                | SKOSConcept       | 0..\* |                  | skos:hasTopConcept |
 
 
-## DANS PDF Data source
+## DANS PFF Data source
 [src_pff.csv](src_pff.csv) is based on the list of PFFs maintained by DANS in Google doc [R.0.2 Curated Support Documentation](https://docs.google.com/spreadsheets/d/1hJtnGgO0FWQj4fMjhSIqtmW2lBt1_lI4fMlkgugHMXQ/edit?usp=sharing) 
 
 <!-- 
@@ -55,11 +57,16 @@ changes:
     * "Fileformat" -> "Concept"
     * 
 -->
-### DANS PDF Data source Schema
+### DANS PFF Data source Schema
 
 [schemas/src_pff.linkml.yaml](schemas/src_pff.linkml.yaml)
 
-linkml-convert --schema schemas/src_pff.linkml.yaml   -t json src_pff-sample.csv
+test: `linkml-convert --schema schemas/src_pff.linkml.yaml   -t json src_pff-sample.csv`
+
+### Transforming CSV to Skos RDF
+
+* convert CSV to RDF `linkml-convert --schema schemas/src_pff.linkml.yaml   -t rdf src_pff-sample.csv`
+* **next step:** transform RDF(CSV content) through a SPARQL Transform
 
 
 ## Possible future connections with other registries
