@@ -4,7 +4,23 @@ DANS maintains a list of preferred file formats (PFF) in https://dans.knaw.nl/nl
 
 Similar effort was made in DARIAH project. See https://github.com/ekoi/DANS-File-Formats/blob/additional-formats/dans-file-formats.json
 
-## DANS PFF Data
+
+
+## DANS PFF HTML Content
+
+Scrapped with `python scripts/scrape_pffs_html_pages.py`
+
+Using the URLs from [Hierarchy-Preferred-Formats.csv](Hierarchy-Preferred-Formats.csv) and saving HTML content to [html/](html/), according to `/html/<language>/<file>.html.`
+
+From columns: Collection_URL_NL, Collection_URL_EN, Stable URL English, Stable Nederlands URL
+
+Example: CSV values
+* `https://dans.knaw.nl/nl/bestandsformaten/tekstdocumenten` saved to `html/nl/tekstdocumenten.html`
+* `https://dans.knaw.nl/en/file-formats/text-documents/` saved to `html/en/text-documents.html`
+
+
+
+## DANS PFF Content as skos
 
 [pff-skos.ttl](pff-skos.ttl) [PROTOTYPE]- contains the DANS PFF data in Skos (turtle RDF)  
 
