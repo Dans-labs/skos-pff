@@ -1,0 +1,70 @@
+
+<div class="et_pb_column et_pb_column_4_4 et_pb_column_0_tb_body et_pb_css_mix_blend_mode_passthrough et-last-child">
+<div class="et_pb_module et_pb_post_content et_pb_post_content_0_tb_body" id="content_default">
+<p>Bestanden in het formaat text-fabric (.tf) slaan een kolom met kenmerkwaarden op die overeenkomen met knooppunten en randen in een grafiek, die samen geannoteerde tekst vertegenwoordigen. Het kan gesteld worden dat .tf een Markup-formaat is.</p>
+<p><strong>Geannoteerde tekst</strong><br/>
+In de geesteswetenschappen hebben primaire onderzoeksgegevens vaak de vorm van teksten. Veel van deze teksten zijn historische artefacten en er is veel kennis nodig om ze te interpreteren. Annotaties zijn een geprefereerde manier om deze kennis te vertegenwoordigen. Ze kunnen gedetailleerde linguïstische informatie overbrengen op woordniveau, maar ze kunnen ook personen, plaatsen, materialen en concepten uit de tekst koppelen aan externe beschrijvingen.</p>
+<p>Teksten zijn altijd gestructureerd en annotaties hebben een adresseringsmechanisme nodig om zich te richten op de specifieke gedeelten in de tekst waar ze over gaan. De annotaties hebben de neiging om in zichzelf kennisstructuren te vormen en moeten worden gedeeld en gedistribueerd als afzonderlijke entiteiten.</p>
+<p><strong>Gegevensmodel</strong><br/>
+Text-Fabric is een tool die deze uitwisseling van gegevens mogelijk maakt. Om dit te doen, definieert het een model [TF-model] voor geannoteerde tekst. In dit model is tekst een geannoteerde grafiek: een systeem van nodes (knooppunten) en edges (randen) tussen nodes, waarbij nodes en edges via features (eigenschappen) aan andere informatie zijn gekoppeld. De nodes staan voor tekstuele concepten, zoals woorden, zinnen, hoofdstukken; de edges staan voor relaties tussen deze tekstgedeelten. Features zijn toewijzingen van nodes of edges aan waarden. Nodes zelf zijn slechts gehele getallen en edges zijn slechts paren getallen.</p>
+<p>Dit model ligt heel dicht bij het Linguistic Annotation Framework [LAF ISO-norm]. De belangrijkste verschillen zijn dat LAF het liefst in XML wordt weergegeven en Text-Fabric XML-vrij is; en dat een LAF-gegevensset zich kan bevinden in een enkele of in afzonderlijke bestanden naar keuze van de corpusontwerper, terwijl een Text-Fabric-gegevensset altijd een enkele functie opslaat in een enkel bestand.</p>
+<p><strong>Node features</strong><br/>
+Een node feature is een toewijzing van getallen aan waarden: een kolom met waarden, waarbij de positie in de kolom overeenkomt met het nummer van de node.</p>
+<p><strong>Edge features</strong><br/>
+Een edge feature kan worden gezien als een toewijzing van nodes aan andere nodes, waar een waarde kan worden gegeven voor elke verbinding. Edge features zijn ook kolommen met waarden, waarbij de positie in de kolom overeenkomt met het nummer van de node waar de edges beginnen.</p>
+<p><strong>Bestandsformaat</strong><br/>
+Text-Fabric definieert een efficiënte manier om features in bestanden op te slaan [TF-bestandsformaat]. Elke feature neemt een enkel bestand in beslag. Een Text-Fabric-gegevensset is slechts een platte verzameling feature bestanden.</p>
+<p>Feature bestanden zijn platte tekstbestanden in Unicode met behulp van de UTF8-codering. In het begin is er een aantal regels beginnend met @. Dit zijn metadataregels en kunnen willekeurige sleutel / waarde-paren bevatten. Dan is er een lege regel. Daarna zijn alle lijnen gegevenslijnen. In een feature bestand is de inhoud van een regel gegevens de waarde van de feature voor de node die overeenkomt met het regelnummer. Hier is een gedeeltelijk feature-bestand van het voorbeeld corpusbanken [TF-voorbeeld].</p>
+<p>@node<br/>
+@compiler=Dirk Roorda<br/>
+@description=the letters of a word<br/>
+@name=Culture quotes from Iain Banks<br/>
+@purpose=exposition<br/>
+@source=Good Reads<br/>
+@status=with for similarities in a separate module<br/>
+@url=https://www.goodreads.com/work/quotes/14366-consider-phlebas<br/>
+@valueType=str<br/>
+@version=0.2<br/>
+@writtenBy=Text-Fabric<br/>
+@dateWritten=2019-06-03T07:30:41Z<br/>
+Everything<br/>
+about<br/>
+us<br/>
+everything<br/>
+around<br/>
+us<br/>
+everything<br/>
+we<br/>
+know<br/>
+and<br/>
+can<br/>
+know<br/>
+of<br/>
+is<br/>
+composed<br/>
+ultimately<br/>
+of<br/>
+patterns<br/>
+of<br/>
+nothing</p>
+<p>Dit is de basis, er zijn enkele optimalisaties [TF-optimalisaties] die te maken hebben met sparse features: features die alleen waarden aan een subset van de nodes toewijzen.</p>
+<p><strong>Extensie</strong><br/>
+Feature-bestanden hebben meestal de extensie .tf.</p>
+<p><strong>Hulpmiddelen</strong><br/>
+Text-Fabric is ook een bibliotheek [TF API] waarmee u tekst en annotaties kunt verwerken. Het begrijpt het tf-bestandsformaat en biedt een API om feature bestanden te laden en op te slaan en te berekenen met de gegevens die erin staan. Text-Fabric compileert .tf-bestanden in binaire .tfx-bestanden die zijn geoptimaliseerd om zeer snel te laden. Deze .tfx-bestanden zijn slechts een gemak, maar zijn niet geschikt voor archivering en moeten niet worden beschouwd als een geprefereerd of zelfs acceptabel formaat. Ze zijn afhankelijk van de computer waarop ze zijn gegenereerd.</p>
+<p>Text-Fabric is absoluut niet nodig om .tf-bestanden te begrijpen. Het formaat is zo transparant dat verschillende gebruikers de tool Text-Fabric omzeilen en hun eigen programma’s (in andere talen dan Python) hebben geschreven om .tf-bestanden in te nemen.</p>
+<p><strong>Corpora</strong><br/>
+Een aantal corpora [TF Corpora] zijn al geconverteerd naar Text-Fabric, zoals de Hebreeuwse Bijbel, verschillende Cuneiform-tabletcollecties, de Koran en meer. Voor al deze corpora zijn er speciale tutorials [TF-tutorials] die de praktijk laten zien die Text-Fabric ondersteunt.</p>
+<p><strong>Referenties</strong><br/>
+TF-model: <a class="external-link" data-wpel-link="external" href="https://annotation.github.io/text-fabric/Model/Data-Model/" rel="noopener external noreferrer" target="_self" title="">Model – Text-Fabric</a> (<a class="external-link" data-wpel-link="external" href="https://archive.softwareheritage.org/browse/origin/https://github.com/annotation/text-fabric/content/docs/Model/Data-Model.md/" rel="noopener external noreferrer" target="_self" title="">gearchiveerde versie</a>)</p>
+<p>TF-bestandsformaat: <a class="external-link" data-wpel-link="external" href="https://annotation.github.io/text-fabric/Model/File-formats/" rel="noopener external noreferrer" target="_self" title="">Format – Text-Fabric</a> (<a class="external-link" data-wpel-link="external" href="https://archive.softwareheritage.org/browse/origin/https://github.com/annotation/text-fabric/content/docs/Model/File-formats.md/" rel="noopener external noreferrer" target="_self" title="">gearchiveerde versie</a>)</p>
+<p>TF-optimalisaties: <a class="external-link" data-wpel-link="external" href="https://annotation.github.io/text-fabric/Model/Optimizations/" rel="noopener external noreferrer" target="_self" title="">Optimalisaties – Text-Fabric</a> (<a class="external-link" data-wpel-link="external" href="https://archive.softwareheritage.org/browse/origin/https://github.com/annotation/text-fabric/content/docs/Model/Optimizations.md/" rel="noopener external noreferrer" target="_self" title="">gearchiveerde versie</a>)</p>
+<p>Voorbeeld van TF: Banken: <a class="external-link" data-wpel-link="external" href="https://nbviewer.jupyter.org/github/annotation/banks/blob/master/programs/convert.ipynb" rel="noopener external noreferrer" target="_self" title="">convert.ipynb</a> (<a class="external-link" data-wpel-link="external" href="https://archive.softwareheritage.org/browse/origin/https://github.com/annotation/banks/content/programs/convert.ipynb/" rel="noopener external noreferrer" target="_self" title="">gearchiveerde versie</a>)</p>
+<p>TF API: <a class="external-link" data-wpel-link="external" href="https://annotation.github.io/text-fabric/Api/Fabric/" rel="noopener external noreferrer" target="_self" title="">TF – Text-Fabric</a> (<a class="external-link" data-wpel-link="external" href="https://archive.softwareheritage.org/browse/origin/https://github.com/annotation/text-fabric/content/docs/Api/Fabric.md/" rel="noopener external noreferrer" target="_self" title="">gearchiveerde versie</a>)</p>
+<p>TF Corpora: <a class="external-link" data-wpel-link="external" href="https://annotation.github.io/text-fabric/About/Corpora/" rel="noopener external noreferrer" target="_self" title="">Corpora – Text-Fabric</a> (<a class="external-link" data-wpel-link="external" href="https://archive.softwareheritage.org/browse/origin/https://github.com/annotation/text-fabric/content/docs/About/Corpora.md/" rel="noopener external noreferrer" target="_self" title="">gearchiveerde versie</a>)</p>
+<p>Tutorials TF: <a class="external-link" data-wpel-link="external" href="https://nbviewer.jupyter.org/github/annotation/tutorials/tree/master/" rel="noopener external noreferrer" target="_self" title="">tutorials</a> (<a class="external-link" data-wpel-link="external" href="https://archive.softwareheritage.org/browse/origin/https://github.com/annotation/tutorials/directory/" rel="noopener external noreferrer" target="_self" title="">gearchiveerde versie</a>)</p>
+<p>LAF ISO-norm: <a class="external-link" data-wpel-link="external" href="https://www.iso.org/standard/37326.html" rel="noopener external noreferrer" target="_self" title="">ISO 24612: 2012 – kader voor taalannotaties (LAF)</a></p>
+<p>Text-Fabric is een preferred format binnen <a data-wpel-link="external" href="https://dans.knaw.nl/bestandsformaten/programmeertaal/" rel="external noopener noreferrer" target="_blank">bestandstype Programmeertaal</a>.</p>
+</div>
+</div>
+<!--Source URL: https://dans.knaw.nl/bestandsformaten/programmeertaal/text-fabric/-->
