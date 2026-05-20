@@ -1,21 +1,49 @@
 # Convert PFF CSV to RDF
 
-## old code
-
-* Sample data: [src_pff-sample.csv](src_pff-sample.csv)
-* Schema: [schemas/src_pff.linkml.yaml](schemas/src_pff.linkml.yaml)
-
-
-`linkml-convert --schema schemas/src_pff.linkml.yaml -t json src_pff-sample.csv`
-`linkml-convert --schema schemas/src_pff.linkml.yaml -t rdf src_pff-sample.csv`
-
-## new code
+## files
 
 * Source data: [Hierarchy-Preferred-Formats.csv](Hierarchy-Preferred-Formats.csv)
 * Sample data: [Hierarchy-Preferred-Formats-sample.csv]
 * Schema: [schemas/Hierarchy-Preferred-Formats.linkml.yaml](schemas/Hierarchy-Preferred-Formats.linkml.yaml)
 
+## CSV rows conversion to RDF
+
+TO RDF: 
+
 `linkml-convert --schema schemas/Hierarchy-Preferred-Formats.linkml.yaml -t rdf Hierarchy-Preferred-Formats-sample.csv`
+
+sample output:
+
+```
+@prefix dpff: <http://vocabularies.dans.knaw.nl/pff> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+[] a dpff:PreferredFileFormatCollection ;
+    dpff:row [ a dpff:Row ;
+            dpff:Collection "Programming Languages" ;
+            dpff:Collection_URL_EN "https://dans.knaw.nl/en/file-formats/programming-languages/"^^xsd:anyURI ;
+            dpff:Collection_URL_NL "https://dans.knaw.nl/bestandsformaten/programmeertaal/"^^xsd:anyURI ;
+            dpff:Concept "NetCDF" ;
+            dpff:Stable_Nederlands_URL "https://dans.knaw.nl/bestandsformaten/programmeertaal/netcdf/"^^xsd:anyURI ;
+            dpff:Stable_URL_English "https://dans.knaw.nl/en/file-formats/programming-languages/netcdf/"^^xsd:anyURI ;
+            dpff:isPreferred true ],
+        [ a dpff:Row ;
+            dpff:Collection "Markup language" ;
+            dpff:Collection_URL_EN "https://dans.knaw.nl/en/file-formats/markup-language/"^^xsd:anyURI ;
+            dpff:Collection_URL_NL "https://dans.knaw.nl/bestandsformaten/opmaaktaal/"^^xsd:anyURI ;
+            dpff:Concept "SGML (.sgml)" ;
+            dpff:Stable_Nederlands_URL "https://dans.knaw.nl/bestandsformaten/opmaaktaal/sgml/"^^xsd:anyURI ;
+            dpff:Stable_URL_English "https://dans.knaw.nl/en/file-formats/markup-language/sgml/"^^xsd:anyURI ;
+            dpff:isPreferred false ] .
+```
+
+## Working with Python
+
+Generate a Python object model ([schemas/Hierarchy-Preferred-Formats.linkml.py](schemas/Hierarchy-Preferred-Formats.linkml.py)) from a LinkML schema
+
+`gen-python schemas/Hierarchy-Preferred-Formats.linkml.yaml > schemas/pff.py` - Schema to python classes. (Neat, but usure if it is useful)
+
+`python transform_csv2skos.py` - WIP
 
 ## TODOs
 

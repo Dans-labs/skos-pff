@@ -1,18 +1,29 @@
 # from linkml_runtime.linkml_model.meta import SchemaDefinition
-# from linkml_runtime.dumpers import json_dumper
-# from linkml.utils.schemaloader import SchemaLoader
+from linkml.utils.schemaloader import SchemaLoader
 # from linkml_runtime.loaders import CSVLoader
-#import pff
-# from pff import Row, PreferredFileFormatCollection
-from schemas import pff
 # from schemas.pff import Row, PreferredFileFormatCollection
-print(pff.__file__)
 
-# # load schema
-# schema_path = "schemas/Hierarchy-Preferred-Formats.linkml.yaml"
-# schema = SchemaLoader(schema_path).resolve()
-# # print(json_dumper.dumps(schema))
 
+schema_path = "schemas/Hierarchy-Preferred-Formats.linkml.yaml"
+schema = SchemaLoader(schema_path).resolve()
+print(schema) 
+
+# How the @#$$@ do I use the SchemaLoader?
+
+
+
+
+
+
+# ex_row = Row(
+#     Collection="Text documents",
+#     Collection_URL_NL="https://dans.knaw.nl/nl/bestandsformaten/tekstdocumenten/",
+#     Collection_URL_EN="https://dans.knaw.nl/en/file-formats/text-documents/",
+#     Concept="PDF/A (.pdf)",
+#     isPreferred=1,
+#     Stable_URL_English="https://dans.knaw.nl/en/file-formats/text-documents/pdf-a/",
+#     Stable_Nederlands_URL="https://dans.knaw.nl/bestandsformaten/tekstdocumenten/pdf-a/"
+# )
 # # Load the CSV instances using the schema
 # csv_path = "Hierarchy-Preferred-Formats-sample.csv"
 # loader = CSVLoader()

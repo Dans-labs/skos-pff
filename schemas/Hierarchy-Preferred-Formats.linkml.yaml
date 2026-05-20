@@ -6,7 +6,7 @@ imports:
 - linkml:types
 prefixes:
   linkml: https://w3id.org/linkml/
-  dpff: http://vocabularies.dans.knaw.nl/pff
+  dpff: http://vocabularies.dans.knaw.nl/pff/
 default_prefix: dpff
 types:
   https identifier:
@@ -18,7 +18,7 @@ classes:
     description: >-
       DANS preferred file formats
     slots:
-      - row
+      - row_slot
     tree_root: true
 
 
@@ -59,8 +59,8 @@ slots:
     range: uri
 
 
-  row:
+  row_slot:
     range: Row
     multivalued: true
-    inlined: true  
+    inlined: true 
 
