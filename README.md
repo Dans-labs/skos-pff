@@ -14,13 +14,15 @@ Scrapped with `python scripts/scrape_pffs_html_pages.py`
 
 Using the URLs from [Hierarchy-Preferred-Formats.csv](Hierarchy-Preferred-Formats.csv) and saving HTML content to [html/](html/), according to `/html/<language>/<file>.html.`
 
-From columns: Collection_URL_NL, Collection_URL_EN, Stable URL English, Stable Nederlands URL
+From columns: Collection_URL_NL, Collection_URL_EN, Stable_URL_English, Stable_Nederlands_URL
 
 Example: CSV values
 * `https://dans.knaw.nl/nl/bestandsformaten/tekstdocumenten` saved to `html/nl/tekstdocumenten.html`
 * `https://dans.knaw.nl/en/file-formats/text-documents/` saved to `html/en/text-documents.html`
 
+# CSV to RDF conversion
 
+Process described in [README-csv2rdf-conversion.md](README-csv2rdf-conversion.md)
 
 ## DANS PFF Content as skos
 
@@ -77,7 +79,7 @@ changes:
 
 [schemas/src_pff.linkml.yaml](schemas/src_pff.linkml.yaml)
 
-test: `linkml-convert --schema schemas/src_pff.linkml.yaml   -t json src_pff-sample.csv`
+test: `linkml-convert --schema schemas/src_pff.linkml.yaml -t json src_pff-sample.csv`
 
 ### Transforming CSV to Skos RDF
 

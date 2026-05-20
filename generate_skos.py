@@ -37,7 +37,7 @@ for row in parse_csv_line_by_line('src_pff.csv'):
     if row['isPreferred']:  # tmp - while spreadsheet is not complete
 
         # row['Concept'] - SKOS.Concept
-        concept_uri = url2uri(url=row['Stable URL English'], src_base_uri='https://dans.knaw.nl/en/file-formats/text-documents/', dest_base_uri=ns_str)
+        concept_uri = url2uri(url=row['Stable_URL_English'], src_base_uri='https://dans.knaw.nl/en/file-formats/text-documents/', dest_base_uri=ns_str)
         print(concept_uri)
 #         # concept_uri = URIRef(f'{ns_str}{to_camel_case(row['Concept'])}')
 #         pff_graph.add((concept_uri, RDF.type, SKOS.Concept))

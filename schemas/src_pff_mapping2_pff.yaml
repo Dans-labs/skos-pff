@@ -1,0 +1,3 @@
+class_derivations:
+  SKOSConcept: 
+    populated_from: Row
