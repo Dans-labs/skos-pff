@@ -2,3 +2,4 @@ venv/
 .vscode/
 catalog-v001.xml
 ISSUES.md
+schemas/__pycache__/

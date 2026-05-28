@@ -1,14 +1,42 @@
+from pathlib import Path
 # from linkml_runtime.linkml_model.meta import SchemaDefinition
 from linkml.utils.schemaloader import SchemaLoader
-# from linkml_runtime.loaders import CSVLoader
-# from schemas.pff import Row, PreferredFileFormatCollection
+from linkml_runtime import SchemaView
+from linkml_runtime.loaders import CSVLoader
+# from schemas.H import Row, PreferredFileFormatCollection
+from schemas import HierarchyPreferredFormats
+
+# Classes
+Collection = HierarchyPreferredFormats.PreferredFileFormatCollection()
+Row = HierarchyPreferredFormats.Row()
 
 
-schema_path = "schemas/Hierarchy-Preferred-Formats.linkml.yaml"
+# Schema
+schema_path = (Path().cwd() / "schemas" / "Hierarchy-Preferred-Formats.linkml.yaml").as_posix()
+print(f"Schema path: {schema_path}")
 schema = SchemaLoader(schema_path).resolve()
-print(schema) 
 
-# How the @#$$@ do I use the SchemaLoader?
+# SchemaView 
+# The SchemaView class in the linkml-runtime provides a method for dynamically introspecting and manipulating schemas.
+view = SchemaView(schema_path)
+# print(type(schema.classes["PreferredFileFormatCollection"]))
+# print(view) 
+
+# Loading Data from CSV
+data_csv = CSVLoader().load(
+    source=(Path().cwd() / "Hierarchy-Preferred-Formats-sample.csv").as_posix(),
+    target_class=HierarchyPreferredFormats.PreferredFileFormatCollection,
+    index_slot='Collection', 
+    schema=schema,
+    schemaview=view,
+)
+
+
+    # source="Hierarchy-Preferred-Formats-sample.csv",
+    # ,                       
+    # base_dir="schemas",
+    # schema=schema, 
+    # index_slot="row_slot"
 
 
 

@@ -41,9 +41,14 @@ sample output:
 
 Generate a Python object model ([schemas/Hierarchy-Preferred-Formats.linkml.py](schemas/Hierarchy-Preferred-Formats.linkml.py)) from a LinkML schema
 
-`gen-python schemas/Hierarchy-Preferred-Formats.linkml.yaml > schemas/pff.py` - Schema to python classes. (Neat, but usure if it is useful)
+`gen-python schemas/Hierarchy-Preferred-Formats.linkml.yaml > schemas/Hierarchy-Preferred-Formats.linkml.py` - Schema to python classes. (Neat, but usure if it is useful)
 
 `python transform_csv2skos.py` - WIP
+
+https://linkml.io/linkml/developers/loaders-and-dumpers.html explains how the linkml-runtime loaders and dumpers framework convert different forms of data that conform to a LinkML Schema.
+
+* Dumpers dump an in-memory python object to a serialization format
+* Loaders load a file or string that is in a supported format, translating into in-memory python objects.
 
 ## TODOs
 
