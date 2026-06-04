@@ -5,7 +5,7 @@ import requests
 from bs4 import BeautifulSoup, Comment
 
 '''
-This script quick-n-dirty reads URLs from the Hierarchy-Preferred-Formats.csv file,
+This script quick-n-dirty reads URLs from the pff-src.csv file,
 fetches the HTML content for each URL, 
 extracts the content within the <div id="content_row_default"> tag, 
 and saves it to a file in the html directory, organized in language subfolders.
@@ -13,7 +13,7 @@ and saves it to a file in the html directory, organized in language subfolders.
 
 def parse_csv_for_urls(csv_file):
     """
-    Parses Hierarchy-Preferred-Formats.csv and extracts URLs from columns:
+    Parses pff-src.csv and extracts URLs from columns:
     Collection_URL_NL, Collection_URL_EN, Stable_URL_English, Stable_Nederlands_URL.
     Returns a list of URLs.
     """
@@ -84,7 +84,7 @@ def save_html_to_file(html_content, url):
     except Exception as err:
         print(f"Error saving HTML to file: {err}")
 
-urls_list = parse_csv_for_urls("Hierarchy-Preferred-Formats.csv")
+urls_list = parse_csv_for_urls("pff-src.csv")
 # print(sorted(urls_list))
 url_filepath = {}
 for url in urls_list:

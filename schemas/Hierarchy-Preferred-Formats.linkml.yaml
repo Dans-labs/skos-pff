@@ -1,6 +1,6 @@
 name: DANS-PFF-spreadsheet-linkml-schema
 description:  |
-  data source CSV: Hierarchy-Preferred-Formats-sample.csv
+  data source CSV: pff-src-SAMPLE.csv
 id: http://vocabularies.dans.knaw.nl/pff/linkml-schema
 imports:
 - linkml:types
