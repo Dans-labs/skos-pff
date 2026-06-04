@@ -1,0 +1,88 @@
+# CONSTRUCT query to translate CSV structure, represented in RDF triples (schema: ../schemas/pff-src.linkml.yaml)
+# to SKOS RDF triples
+
+PREFIX dct: <http://purl.org/dc/terms/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX dpff: <http://vocabularies.dans.knaw.nl/pff/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+CONSTRUCT {
+
+#######################
+##### Concept Scheme ##
+#######################
+dpff:scheme a skos:ConceptScheme ;
+    dct:title "DANS Preferred File Formats"@en ;
+	skos:prefLabel "DANS Preferred File Formats"@en ;
+	skos:definition "DANS Preferred File Formats (DPFF) is ..."@en ; # TODO 
+	# dct:creator <http://ror.org/008pnp284> 
+	# dct:created "2026-01-26"^^xsd:date ;
+	owl:versionInfo "0.2.0" . 
+
+#######################
+#### Top Concepts #####
+#######################
+dpff:preferredFileFormats a skos:Concept ;
+	skos:prefLabel "Preferred File Formats"@en ;
+      skos:topConceptOf dpff:scheme ;
+      skos:inScheme dpff:scheme .
+
+dpff:nonPreferredFileFormats a skos:Concept ;
+	skos:prefLabel "Non-Preferred File Formats"@en ;
+      skos:topConceptOf dpff:scheme ;      
+      skos:inScheme dpff:scheme .
+
+#######################
+#### Collections ####
+#######################
+?collectionURI a skos:Collection ;
+    skos:member ?conceptURI .
+    #   skos:prefLabel "Text Documents Collection"@en, "Verzameling tekstdocumenten"@nl ;
+
+
+#######################
+##### Concepts    #####
+#######################
+  ?conceptURI a skos:Concept ;
+  skos:prefLabel ?label ;
+  rdfs:seeAlso ?stableUrl, ?stableUrlNL ;
+  skos:broader ?broader ;
+  rdfs:comment ?collectionURI
+  .
+}   
+
+#SELECT * 
+WHERE {
+  ?row a dpff:Row ;
+  dpff:Stable_URL_English ?stableUrl ;
+  dpff:Stable_Nederlands_URL ?stableUrlNL ;
+  dpff:isPreferred ?isPreferred ;
+  dpff:Concept ?label ; 
+  dpff:Collection ?collection
+  .
+
+  # PREPARE URI of skos:Concept
+    BIND(STR(?stableUrl) AS ?_u)
+    BIND(REPLACE(?_u, "^.*/([^/?#]+)/?$", "$1") AS ?_u_lastSegment)
+    BIND(IRI(CONCAT(STR(dpff:), ?_u_lastSegment)) AS ?conceptURI)
+  # PREPARE skos:broader value (?broader): pdff:preferredFileFortmats vs dpff:nonPreferredFileFormats
+    BIND(IF(?isPreferred = 1, dpff:preferredFileFormats, dpff:nonPreferredFileFormats) AS ?broader)
+  # PREPARE skos:Collection members 
+    BIND(IRI(CONCAT(STR(dpff:), REPLACE(?collection, "\\s+", ""))) AS ?collectionURI)
+}
+
+# dpff:Stable_URL_English "https://dans.knaw.nl/en/file-formats/markup-language/css/"^^xsd:anyURI ;
+
+
+## STRUCTURAL CHALLENGES
+# [x] URI construction 
+# [x] collections
+# [x] top concepts
+
+# what more is needed 
+
+## CONTENT CHALLENGES
+# [ ] collections text into collections: html/en/text-documents.html 
+# [ ] prefLabel: EN/NL
+# [ ] definition: EN/NL from HTML (html files)
