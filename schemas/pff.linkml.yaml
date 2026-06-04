@@ -1,0 +1,97 @@
+name: DANS-PFF
+title: DANS Preferred File Formats SKOS LinkML Schema
+description: |-
+  Formalization of DANS Preferred File Formats as Linked Data taxonomy using LinkML, reflecting SKOS structure.
+id: "http://vocabularies.dans.knaw.nl/pff/linkml-schema"
+prefixes:
+  dpff: "http://vocabularies.dans.knaw.nl/pff/"
+  skos: "http://www.w3.org/2004/02/skos/core#"
+  dct: "http://purl.org/dc/terms/"
+  owl: "http://www.w3.org/2002/07/owl#"
+  linkml: "https://w3id.org/linkml/"
+default_prefix: dpff
+
+imports:
+  - linkml:types
+
+classes:
+  SKOSConceptScheme:
+    class_uri: skos:ConceptScheme
+    description: "SKOS Concept Scheme for DANS Preferred File Formats"
+    slots:
+      - title
+      - prefLabel
+      - definition
+      - versionInfo
+      - topConcepts
+
+  SKOSConcept:
+    class_uri: skos:Concept
+    description: "SKOS Concept representing a file format"
+    slots:
+      - prefLabel
+      - definition
+      - broader
+      - narrower
+      - inScheme
+      - isReplacedBy
+      - exactMatch
+
+  SKOSCollection:
+    class_uri: skos:Collection
+    description: "SKOS Collection grouping Concepts"
+    slots:
+      - prefLabel
+      - member
+
+slots:
+  title:
+    slot_uri: dct:title
+    range: string
+
+  prefLabel:
+    slot_uri: skos:prefLabel
+    range: string
+    multivalued: true
+
+  definition:
+    slot_uri: skos:definition
+    range: string
+    multivalued: true
+
+  versionInfo:
+    slot_uri: owl:versionInfo
+    range: string
+
+  topConcepts:
+    slot_uri: skos:hasTopConcept
+    range: SKOSConcept
+    multivalued: true
+
+  broader:
+    slot_uri: skos:broader
+    range: SKOSConcept
+
+  narrower:
+    slot_uri: skos:narrower
+    range: SKOSConcept
+    multivalued: true
+
+  inScheme:
+    slot_uri: skos:inScheme
+    range: SKOSConceptScheme
+
+  member:
+    slot_uri: skos:member
+    range: SKOSConcept
+    multivalued: true
+
+  isReplacedBy:
+    slot_uri: dct:isReplacedBy
+    range: SKOSConcept
+    multivalued: true
+
+  exactMatch:
+    slot_uri: skos:exactMatch
+    range: SKOSConcept
+

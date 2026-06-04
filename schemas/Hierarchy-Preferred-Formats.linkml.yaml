@@ -1,0 +1,66 @@
+name: DANS-PFF-spreadsheet-linkml-schema
+description:  |
+  data source CSV: Hierarchy-Preferred-Formats-sample.csv
+id: http://vocabularies.dans.knaw.nl/pff/linkml-schema
+imports:
+- linkml:types
+prefixes:
+  linkml: https://w3id.org/linkml/
+  dpff: http://vocabularies.dans.knaw.nl/pff/
+default_prefix: dpff
+types:
+  https identifier:
+    typeof: string
+
+classes:
+
+  PreferredFileFormatCollection:
+    description: >-
+      DANS preferred file formats
+    slots:
+      - row_slot
+    tree_root: true
+
+
+  Row:
+    description: A row describing a file format, its hierarchy, and metadata.
+    slots:
+      - Collection
+      - Collection_URL_NL
+      - Collection_URL_EN
+      - Concept
+      - isPreferred
+      - Stable_URL_English
+      - Stable_Nederlands_URL
+
+
+slots:
+  Collection:
+    description: The overall document category or grouping.
+    range: string
+  Collection_URL_NL:
+    description: URL to the file format collection in Dutch
+    range: uri
+  Collection_URL_EN:
+    description: URL to the file format collection in English
+    range: uri
+  Concept:
+    description:  file format (e.g. PDF/A (.pdf)).
+    range: string
+  isPreferred:
+    description: is the file format preferred (true) or non-preferred (false), according to DANS.
+    range: boolean
+    ifabsent: false
+  Stable_URL_English:
+    description: The stable URL for the file format in English.
+    range: uri
+  Stable_Nederlands_URL:
+    description: The stable URL for the file format in Dutch.
+    range: uri
+
+
+  row_slot:
+    range: Row
+    multivalued: true
+    inlined: true 
+

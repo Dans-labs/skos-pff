@@ -14,7 +14,7 @@ and saves it to a file in the html directory, organized in language subfolders.
 def parse_csv_for_urls(csv_file):
     """
     Parses Hierarchy-Preferred-Formats.csv and extracts URLs from columns:
-    Collection_URL_NL, Collection_URL_EN, Stable URL English, Stable Nederlands URL.
+    Collection_URL_NL, Collection_URL_EN, Stable_URL_English, Stable_Nederlands_URL.
     Returns a list of URLs.
     """
     urls = []
@@ -24,8 +24,8 @@ def parse_csv_for_urls(csv_file):
             for row in reader:
                 urls.append(row['Collection_URL_NL'])
                 urls.append(row['Collection_URL_EN'])
-                urls.append(row['Stable URL English'])
-                urls.append(row['Stable Nederlands URL'])
+                urls.append(row['Stable_URL_English'])
+                urls.append(row['Stable_Nederlands_URL'])
         return set(urls)
     except Exception as err:
         print(f"Error reading CSV file: {err}")
