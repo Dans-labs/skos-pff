@@ -48,7 +48,8 @@ dpff:nonPreferredFileFormats a skos:Concept ;
   skos:prefLabel ?label ;
   rdfs:seeAlso ?stableUrl, ?stableUrlNL ;
   skos:broader ?broader ;
-  rdfs:comment ?collectionURI
+  skos:definition "" ; # TOODO
+  rdfs:comment ?collectionURI 
   .
 }   
 
@@ -67,22 +68,21 @@ WHERE {
     BIND(REPLACE(?_u, "^.*/([^/?#]+)/?$", "$1") AS ?_u_lastSegment)
     BIND(IRI(CONCAT(STR(dpff:), ?_u_lastSegment)) AS ?conceptURI)
   # PREPARE skos:broader value (?broader): pdff:preferredFileFortmats vs dpff:nonPreferredFileFormats
-    BIND(IF(?isPreferred = 1, dpff:preferredFileFormats, dpff:nonPreferredFileFormats) AS ?broader)
+    BIND(IF(?isPreferred = TRUE, dpff:preferredFileFormats, dpff:nonPreferredFileFormats) AS ?broader)
   # PREPARE skos:Collection members 
     BIND(IRI(CONCAT(STR(dpff:), REPLACE(?collection, "\\s+", ""))) AS ?collectionURI)
 }
 
 # dpff:Stable_URL_English "https://dans.knaw.nl/en/file-formats/markup-language/css/"^^xsd:anyURI ;
 
+# run query: arq --query sparql/construct-row2skosConcept.rq --data pff-src-SAMPLE.ttl
 
-## STRUCTURAL CHALLENGES
+## STRUCTURAL CHALLENGES ##
 # [x] URI construction 
 # [x] collections
 # [x] top concepts
-
-# what more is needed 
-
-## CONTENT CHALLENGES
+## CONTENT CHALLENGES ##
 # [ ] collections text into collections: html/en/text-documents.html 
-# [ ] prefLabel: EN/NL
 # [ ] definition: EN/NL from HTML (html files)
+## TODO
+# [ ] collection prefLabel @nl - ADD COLLUMN TO CSV
