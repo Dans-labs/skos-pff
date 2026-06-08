@@ -78,17 +78,41 @@ sample output:
 ```
 
 
-### Source: HTML Content
+## Source: HTML Content
 
-Scrapped with `python scripts/scrape_pffs_html_pages.py`
+Scrapped with [scripts/scrape_pffs_html_pages.py](scripts/scrape_pffs_html_pages.py) `python scripts/scrape_pffs_html_pages.py`
 
-Using the URLs from [pff-src.csv](pff-src.csv) and saving HTML content to [html/](html/), according to `/html/<language>/<file>.html.`
+Using the URLs from [pff-src.csv](pff-src.csv) and saving HTML content to [html/](html/), in sub folders:
+
+```
+html/
+├── collection_urls_en - collections@en (ie html/collection_urls_en/audio.html)
+├── collection_urls_nl - collections@nl (ie html/collection_urls_en/audio.html)
+├── stable_urls_en - concepts@en (ie html/stable_urls_en/aac.html)
+└── stable_urls_nl - concepts@nl (ie html/stable_urls_nl/aac.html)
+```
+
 
 From columns: Collection_URL_NL, Collection_URL_EN, Stable URL English, Stable Nederlands URL
 
 Example: CSV values
 * `https://dans.knaw.nl/nl/bestandsformaten/tekstdocumenten` saved to `html/nl/tekstdocumenten.html`
 * `https://dans.knaw.nl/en/file-formats/text-documents/` saved to `html/en/text-documents.html`
+
+### HTML structure
+
+There are 2 types of HTML content:
+
+* individual file-formats ie [html/en/aac.html](html/en/aac.html)
+* **file format types** ie. [html/en/audio.html](html/en/audio.html)
+  * lengthier multi-line descriptions
+  * ie  `pandoc -f html -t markdown_strict  html/en/3d.html `    
+
+TODO:
+
+- [ ] destinguish this type of files, perhaps based on origin
+- [ ] 
+
 
 
 # Output: DANS PFF as SKOS
